@@ -1,10 +1,10 @@
 # Blu Coffee
 
-`CURSO`
+`CURSO` Analise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA` Projeto: Desenvolvimento de uma Aplicação Distribuída
 
-`SEMESTRE`
+`SEMESTRE` EIXO 4
 
 O objetivo geral deste projeto se volta ao desenvolvimento de uma plataforma acessível e interativa para a oferta de recursos de uma cafeteria, tendo em foco fazer o gerenciamento das informações a fim de atender o maior número de pessoas possíveis.
 
