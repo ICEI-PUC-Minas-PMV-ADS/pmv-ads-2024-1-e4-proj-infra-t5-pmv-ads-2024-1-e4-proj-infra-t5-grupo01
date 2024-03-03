@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# BLU COFFEE
 
 `CURSO`
 
@@ -6,18 +6,19 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O objetivo geral deste projeto se volta ao desenvolvimento de uma plataforma acessível e interativa para a oferta de recursos de uma cafeteria, tendo em foco fazer o gerenciamento das informações a fim de atender o maior número de pessoas possíveis.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Douglas Zoccarato Gomes
+* Gustavo de Abreu Santos
+* Leticia Layane Pauli
+* Matheus Araujo Rios Fernandino
+* Remilton Junior
 
 ## Orientador
 
-* Nome completo do professor 1
+* Pedro Felipe Alves de Oliveira
 
 ## Instruções de utilização
 
