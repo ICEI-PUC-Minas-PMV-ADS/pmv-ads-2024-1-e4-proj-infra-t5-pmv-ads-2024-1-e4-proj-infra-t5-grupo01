@@ -130,7 +130,7 @@ O diagrama de casos de uso abaixo resume as interações dos atores com a aplica
 
 A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
 
-![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/111924209/1bf5e8d8-7c7d-414e-9420-7c3f4935b306)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/111924209/df6e16f6-cde9-4af2-86c5-f71d96135e53)
 
 link para documentação no excel: https://sgapucminasbr-my.sharepoint.com/:x:/g/personal/1425096_sga_pucminas_br/EROsgkA4qt9NjJpohiLB5kABB5TeAmVp67UJxjqTb_D4gw?e=SmPeOU
 
