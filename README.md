@@ -1,4 +1,4 @@
-# BLU COFFEE
+# Blu Coffee
 
 `CURSO`
 
