@@ -40,32 +40,47 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ### Análise da Situação Atual
 
-Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o modelo do sistema como ele funciona hoje. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional. 
+Com o avanço da tecnologia, os softwares de gerenciamento de cafeterias estão se tornando mais sofisticados e integrados. Eles podem incluir recursos como gestão de estoque, controle de vendas, integração com sistemas de pagamento, análise de dados e até mesmo aplicativos móveis para pedidos os online. O mercado de cafeterias no Brasil é altamente competitivo, com muitos estabelecimentos buscando se destacar pela qualidade do produto, atendimento ao cliente, eficiência operacional. Nesse contexto, os softwares de gerenciamento que oferecem soluções eficazes para melhorar a operação e a experiência para o cliente têm uma vantagem bem competitiva.
+
+Tendências atuais no mercado de cafeterias incluem a demanda por produtos orgânicos e sustentáveis, opções de alimentação saudável, experiências personalizadas para os clientes e conveniência, como pedidos online e entregas. Os softwares podem ajudar os estabelecimentos a acompanhar essas tendências, otimizando os processos e oferecendo insights para atender às preferências dos clientes.
+
+Uma tendência crescente é a integração de softwares de gerenciamento de cafeterias com outras plataformas, como aplicativos de entrega de comida, sistemas de fidelidade de clientes e redes sociais. Isso permite uma experiência mais interativa para os clientes e uma gestão mais eficaz para os proprietários de cafeterias.
+
+Em resumo, um software de gerenciamento de cafeteria no Brasil enfrenta um ambiente competitivo e dinâmico, mas também oferece oportunidades significativas para melhorar a eficiência operacional, atender às demandas dos clientes e se destacar no mercado. O oferecimento de uma solução tecnologicamente avançada, fácil de usar e que se adapte às necessidades específicas de cada estabelecimento fará uma grande diferença para o mesmo.
 
 ### Descrição Geral da Proposta
 
-Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias.
+O software de gerenciamento de cafeteria é uma ferramenta essencial projetada para simplificar e otimizar todas as operações envolvidas na gestão de uma cafeteria. Com uma interface intuitiva e recursos abrangentes, este software oferece uma solução completa para proprietários e gerentes que desejam aprimorar a eficiência de seus negócios.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – Usuário/Cliente e suas funcionalidades.
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 1. Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN. 
+O processo atual (AS IS) tem suas atividades descritas conforme o mapeamento abaixo. No entanto, foram identificadas oportunidades de melhoria, como atividades predominantemente manuais e centralizadas em um único indivíduo, pois muitas cafeterias ainda usam do atendimento no WhatsApp, ocorrendo assim um alto volume de comunicação, o que aumenta o risco de perda de informações, por isso a questão de um sofwatre de gerenciamento, é a melhor opção. 
 
-![Processo 1](img/02-bpmn-proc1.png)
+![Processo 1](img/proc1.jpg)
 
-### Processo 2 – NOME DO PROCESSO
+### Processo 2 – Administrador/Funcionário e suas funcionalidades.
 
 Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
 
-![Processo 2](img/02-bpmn-proc2.png)
+![Processo 2](img/proc2.jpg)
 
 ## Indicadores de Desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Colocar no mínimo 5 indicadores. 
+Tempo de Processamento de Pedidos: Um tempo menor indica maior eficiência no processo.
 
-Usar o seguinte modelo: 
+Taxa de Erros de Pedido: Um software eficaz deve minimizar os erros de pedido.
 
-![Indicadores de Desempenho](img/02-indic-desemp.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+Satisfação do Cliente: Um software eficaz deve levar a uma maior satisfação do cliente, refletindo-se em avaliações positivas.
+
+Utilização do Sistema: Uma alta utilização indica que o software está integrado com sucesso às operações diárias.
+
+Eficiência do Estoque: Avalia a precisão do software na gestão do estoque, medindo a diferença entre o estoque físico e o estoque registrado no sistema.
+
+Taxa de Retenção de Clientes: Um software eficaz deve incentivar a fidelidade do cliente.
+
+Tempo Médio de Resolução de Problemas:  Um tempo menor indica uma melhor capacidade de resposta da equipe de suporte.
+
+Taxa de Utilização do Aplicativo Móvel: Se o software incluir um aplicativo móvel, a taxa de utilização desse aplicativo pode ser um indicador importante do engajamento dos clientes e da conveniência do software.
 
 ## Requisitos
 
