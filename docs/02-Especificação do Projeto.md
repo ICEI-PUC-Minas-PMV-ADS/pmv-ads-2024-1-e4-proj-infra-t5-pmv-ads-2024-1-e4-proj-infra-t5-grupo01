@@ -1,26 +1,12 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+<p>A persona representa o cliente ideal, sendo um modelo que encapsula todas as características do cliente ideal. Ela é construída com base em dados e atributos de clientes reais, como comportamento, informações demográficas, desafios e objetivos. Portanto, ao definir uma persona, nosso objetivo é compreender os conflitos ou problemas enfrentados pelo cliente, de modo a determinar como o sistema que está sendo projetado pode ajudá-lo.</p>
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+As personas elaboradas neste projeto abrangem as seguintes características:
+</br>
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
@@ -28,17 +14,18 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Luana Sousa | Poder ver as imagens dos produtos prontos antes de escolher    | Sou capaz de perceber se a apresentação do produto me agrada. |
+|Luana Sousa | Encontrar locais novos que pratiquem a gastronomia inclusiva  | Porque tenho restrições alimentares e não tenho muitas opções confiáveis. |
+|Luana Sousa | Ajudar as pessoas a encontrarem opções saborosas e saudáveis    | Não existem muitas opções disponíveis e que sejam de conhecimento amplo. |
+|Silvia Almeida | Entrar em contato facilmente com o estabelecimento   | Possa ter um canal direto em caso de necessidade. |
+|Silvia Almeida | Encontrar uma cafeteria cujo tempo de entrega não seja tão longo   | Porque as opções que conheço ficam mais distantes da minha casa e tem um tempo de entrega alargado. |
+|Tereza Solana | Gerar relatórios sobre as vendas realizadas      | Para que eu consiga ter uma melhor visibilidade do meu negócio |
+|Tereza Solana | Ter informações atualizadas sobre meu estoque    | Consiga fazer uma melhor gestão e evitar surpresas que impactam no funcionamento.|
+|Tereza Solana | Investir na modalidade de delivery    | Atualmente tenho um alto custo para manter o atendimento presencial. |
+|Fábio Gome  | Ter opções de delivery de estabelecimentos que ofereçam comidas sem glúten e lactose  | As opções que conheço só tem atendimento presencial e existem dias que é inviável sair de casa. |
+|Fábio Gomes | Ter confiança nos alimentos sem glúten e lactose produzidos pelos restaurantes    | já comi em locais que, apesar de se intitularem inclusivos, na realidade não cuidavam 100% desse aspecto. |
+|Fábio Gomes | Apoiar uma causa social de forma constante   | Tenho consciência da quantidade de pessoas que necessitam.|
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
