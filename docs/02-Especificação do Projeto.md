@@ -6,6 +6,15 @@
 
 As personas elaboradas neste projeto abrangem as seguintes características:
 </br>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/108854732/c871b3b0-fce7-4ac0-a58b-b1ae8222dd8d)
+</br>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/108854732/cf8315b5-fbdd-4769-af84-90b2314a7c88)
+</br>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/108854732/9b0e6a4f-91ee-4834-85b7-6296dc2f2df3)
+</br>
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/108854732/dc647cf9-3866-4a88-9ca9-9c5ebc67bac8)
+</br>
+
 
 
 ## Histórias de Usuários
@@ -60,64 +69,62 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+O escopo funcional do projeto é delineado pelos requisitos funcionais, os quais detalham as diversas interações dos usuários, e pelos requisitos não funcionais, que descrevem os aspectos gerais que o sistema deve apresentar. A seguir, apresentamos esses requisitos.
 
 ### Requisitos Funcionais
 
+<p>A tabela a seguir lista os requisitos do projeto, indicando a ordem de prioridade para sua entrega.</p>
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A aplicação deve apresentar na página principal informações sobre a história da cafeteria | BAIXA | 
+|RF-002| A aplicação deve apresentar, para cada produto, uma imagem correspondente. (thumbnail)  | ALTA |
+|RF-003| A aplicação deve permitir ao usuário visualizar o cardápio completo do estabelecimento com todos os detalhes dos ingredientes  | ALTA |
+|RF-004| A aplicação deve permitir ao gestor cadastrar, alterar e remover os produtos   | ALTA |
+|RF-005| A aplicação deve permitir que o usuário adicione e remova promoções  | MÉDIA |
+|RF-006| A aplicação permite que o usuário realize os seus pedidos diretamente por ele  | ALTA |
+|RF-007| A aplicação deve oferecer ao gestor uma funcionalidade de relatório de estoque dos produtos   | ALTA |
+|RF-008| A aplicação deve permitir visualizar as informações de contatos do mantenedor do site   | BAIXA |
+|RF-009| A aplicação deve oferecer ao gestor uma funcionalidade de relatório de vendas   | ALTA |
+|RF-010| A aplicação deve permitir que qualquer usuário possa se cadastrar no site   | BAIXA |
+|RF-011| A aplicação deve permitir que os usuários realizem seus pedidos após a realização do login   | ALTA |
+|RF-012| A aplicação deve permitir o cadastro e atualização dos produtos de estoque pelos funcionários | MÉDIA |
+
+
 
 ### Requisitos não Funcionais
 
+A tabela abaixo enumera os requisitos não funcionais que o projeto deve cumprir:
+
+
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Repl.it, GitHub Pages, Heroku) | ALTA | 
+|RNF-002| A aplicação deverá ser responsiva permitindo a visualização em diferentes telas de forma adequada |  ALTA |
+|RNF-003| A aplicação deve ter bom nível de contraste entre os elementos da tela em conformidade |  ALTA |
+|RNF-004| A aplicação deve ser compatível com os principais navegadores do mercado (Google Chrome, Firefox, Microsoft Edge) |  ALTA |
+|RNF-005| A aplicação não permite o recebimento de cadastros de usuários com dados necessários em branco |  ALTA |
+|RNF-006| A aplicação deverá informar o erro de cadastro e login para o usuário caso os dados inseridos não estejam no banco de dados |  ALTA |
+|RNF-007| A aplicação deverá realizar backup dos dados principais de cadastros dos clientes para um banco de dados em nuvem |  ALTA |
+|RNF-008| A aplicação será desenvolvida através das linguagens JavaScript e TypeScript e utilizar como armazenamento dos dados o banco de dados Firestore do Google |  ALTA |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que impõem limitações à execução deste projeto e que representam diretrizes claras para seu desenvolvimento são apresentadas na tabela a seguir:
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| O projeto deverá ser entregue até o final do semestre letivo |
+|02| A aplicação distrubuída deve se restringir às linguagens JavaScritp e TypeScript e ao banco de dados Firestore   |
+|03| A equipe não pode subcontratar o desenvolvimento do trabalho    |
+|04| A aplicação distribuída não deve demandar pagamento   |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+O diagrama de casos de uso abaixo resume as interações dos atores com a aplicação:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
 
 # Matriz de Rastreabilidade
 
@@ -125,12 +132,6 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
 
 
 # Gerenciamento de Projeto
