@@ -157,12 +157,26 @@ O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utiliz
 
 ## Gerenciamento de Equipe
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+ A equipe foi organizada, conforme abaixo, da seguinte maneira:
 
-![Simple Project Timeline](img/02-project-timeline.png)
+Scrum Master: Leticia Pauli
+
+Product Owner: Douglas Zoccarato 
+
+Equipe de Desenvolvimento:
+
+Gustavo Santos,
+Matheus Rios,
+Remilton Junior.
+
 
 ## Gestão de Orçamento
+A gestão de orçamento diz respeito à previsão, alocação e controle dos custos do projeto. Inicia-se com a elaboração de um orçamento detalhado, baseado nas necessidades do projeto e nos recursos disponíveis. Foi desenvolvido para o projeto uma estimativa variável com os custos médios do projeto.
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+Foi especificado com base no site Glassdoor.com uma média de salarios mensais para estimar os custos:
 
-![Orçamento](img/02-orcamento.png)
+![Salario medio](img/salariomedio.jpg)
+
+Assim foi projetado a estimativa de custos finais do Projeto com duração de 5 meses, onde a equipe conta com um Scrum Master, um Quality Assurance, e três Desenvolvedores:
+
+![Orçamento](img/orcamentos.jpg)
