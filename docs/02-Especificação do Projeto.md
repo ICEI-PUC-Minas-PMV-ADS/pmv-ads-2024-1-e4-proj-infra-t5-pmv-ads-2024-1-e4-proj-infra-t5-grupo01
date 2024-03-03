@@ -180,3 +180,27 @@ Foi especificado com base no site Glassdoor.com uma média de salarios mensais p
 Assim foi projetado a estimativa de custos finais do Projeto com duração de 5 meses, onde a equipe conta com um Scrum Master, um Quality Assurance, e três Desenvolvedores:
 
 ![Orçamento](img/orcamentos.jpg)
+
+# Cronograma de Execução e Requisitos
+
+## Requisitos Funcionais
+- **Alta Prioridade:** RF-002, RF-003, RF-004, RF-006, RF-007, RF-009, RF-011
+- **Média Prioridade:** RF-005, RF-012
+- **Baixa Prioridade:** RF-001, RF-008, RF-010
+
+## Requisitos Não Funcionais
+- **Alta Prioridade:** RNF-001, RNF-002, RNF-004, RNF-007, RNF-008
+- **Média e Baixa Prioridade:** RNF-003, RNF-005, RNF-006
+
+## Cronograma Sugerido
+- **Semana 1-4 (03/04 - 30/04):** Desenvolvimento dos requisitos funcionais de alta prioridade.
+- **Semana 5 (01/05 - 07/05):** Testes e ajustes para requisitos funcionais de alta prioridade.
+- **Semana 6-7 (08/05 - 21/05):** Desenvolvimento dos requisitos funcionais de média prioridade.
+- **Semana 8 (22/05 - 28/05):** Testes e ajustes para requisitos funcionais de média prioridade.
+- **Semana 9 (29/05 - 04/06):** Desenvolvimento e testes dos requisitos funcionais de baixa prioridade.
+- **Semana 10-11 (05/06 - 18/06):** Implementação dos requisitos não funcionais de alta prioridade.
+- **Semana 12 (19/06 - 25/06):** Testes de compatibilidade e acessibilidade para requisitos não funcionais de alta prioridade.
+- **Semana 13 (26/06 - 02/07):** Implementação dos requisitos não funcionais de média e baixa prioridade.
+- **Semana 14 (03/07 - 09/07):** Testes e ajustes finais, preparação para o lançamento.
+
+![Cronograma](img/cronograma.jpeg)
