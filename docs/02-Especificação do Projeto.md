@@ -60,27 +60,14 @@ O processo atual (AS IS) tem suas atividades descritas conforme o mapeamento aba
 
 ### Processo 2 – Administrador/Funcionário e suas funcionalidades.
 
-Apresente aqui o nome e as oportunidades de melhorias para o processo 2. Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN.
+O processo atual (AS IS) tem suas atividades descritas conforme o mapeamento abaixo. Muitas cafeterias frequentemente gerenciam seus estabelecimentos de forma manual, o que resulta em processos dispendiosos, ineficientes e propensos a erros.
 
 ![Processo 2](img/proc2.jpg)
 
 ## Indicadores de Desempenho
 
-Tempo de Processamento de Pedidos: Um tempo menor indica maior eficiência no processo.
+![Indicadores de Desempenho](img/indicadores.jpg)
 
-Taxa de Erros de Pedido: Um software eficaz deve minimizar os erros de pedido.
-
-Satisfação do Cliente: Um software eficaz deve levar a uma maior satisfação do cliente, refletindo-se em avaliações positivas.
-
-Utilização do Sistema: Uma alta utilização indica que o software está integrado com sucesso às operações diárias.
-
-Eficiência do Estoque: Avalia a precisão do software na gestão do estoque, medindo a diferença entre o estoque físico e o estoque registrado no sistema.
-
-Taxa de Retenção de Clientes: Um software eficaz deve incentivar a fidelidade do cliente.
-
-Tempo Médio de Resolução de Problemas:  Um tempo menor indica uma melhor capacidade de resposta da equipe de suporte.
-
-Taxa de Utilização do Aplicativo Móvel: Se o software incluir um aplicativo móvel, a taxa de utilização desse aplicativo pode ser um indicador importante do engajamento dos clientes e da conveniência do software.
 
 ## Requisitos
 
