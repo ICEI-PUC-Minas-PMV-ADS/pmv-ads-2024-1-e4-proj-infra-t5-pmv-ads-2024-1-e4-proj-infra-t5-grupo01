@@ -124,6 +124,8 @@ As questões que impõem limitações à execução deste projeto e que represen
 ## Diagrama de Casos de Uso
 
 O diagrama de casos de uso abaixo resume as interações dos atores com a aplicação:
+</br>
+![diagramaUML](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/108854732/75bbef15-009e-4ed2-a627-74d75296325c)
 
 
 # Matriz de Rastreabilidade
