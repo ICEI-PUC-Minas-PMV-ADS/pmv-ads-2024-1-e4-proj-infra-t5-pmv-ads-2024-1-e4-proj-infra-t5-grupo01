@@ -1,14 +1,24 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+Nesta seção estão contempladas as definições de ferramentas utilizadas pela equipe tanto para a manutenção dos códigos e demais artefatos quanto para a organização do time na execução das tarefas do projeto.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
 
 ## Relação de Ambientes de Trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Os artefatos do projeto serão desenvolvidos a partir das plataformas listadas abaixo:
+
+|Ambiente                       |Plataforma  |Link de acesso                                                                                                          |
+|---------------------------    |----------  |------------------------------------------------------------------------------------------------------------------------|
+|Repositório de código-fonte    |GitHub      |[GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/tree/main)|
+|Documentos do projeto          |Google Docs|[Google Docs](https://docs.google.com/document/d/1KvXyCyd7VwPn308cMu5XoW9Syf9pnWuBRs-b3akDa5w/edit)                               | 
+|Gerenciamento do projeto       | GitHub    |[GitHub]()                               |
+|Gerenciamento de diagramas     |XXXX |[XXXXXX](xxxxxxx)                                                    | 
+|Gerenciamento de wireframes    |XXXXXX|[XXXXXXXXXX](XXXXXXX)                       | 
+|Gerenciamento do banco de dados|Firebase| [Firebase](xxxxxxxxx)                                                                             |
+|Gerenciamento de código-fonte|GitHub|    [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/tree/main)                                                                                                                |
+|Serviço de hospedagem da aplicação|XXXXXXXX|[XXXXXX](xxxxxx)           
+
 
 ## Controle de Versão
 
@@ -45,13 +55,27 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
+Em relação à dinâmica de organização da equipe, adotamos a realização de duas reuniões semanais entre os membros, além de uma reunião semanal com o professor orientador para apresentação das entregas, avaliação e possíveis ajustes, bem como orientações para as próximas etapas. As reuniões são estruturadas da seguinte forma:
+Reunião semanal com o Professor Orientador, realizada às terças-feiras às 18h na plataforma Teams, com gravação sempre que necessário.
+Reunião entre os membros da equipe, geralmente às sextas-feiras às 16:00 na plataforma Teams. Nessa reunião, são discutidos os ajustes sugeridos pelo Professor na reunião anterior, bem como a divisão de tarefas para a próxima entrega.
+Reunião entre os membros da equipe, normalmente às segundas-feiras às 16:00 na plataforma Teams. Neste encontro, são apresentadas as produções definidas na reunião anterior e feitos os ajustes necessários para a entrega da semana seguinte.
+Para o gerenciamento do projeto, implementamos quadros Kanban na ferramenta Trello para cada sprint semanal, tornando o progresso do trabalho visível para toda a equipe. Isso cria um indicador visual que permite determinar se uma nova atividade pode ou não ser iniciada e se o prazo acordado está sendo seguido. Para organizar e distribuir as atividades do projeto, estruturamos o Trello com as seguintes listas:
+Backlog: atividades a serem trabalhadas;
+To Do: atividades da sprint atual;
+Doing: atividades iniciadas e em andamento;
+Done: atividades concluídas e prontas para entrega.
+
+![GitHub](img/gerenciamento.png)
+
 Apresente a divisão de papéis entre os membros do grupo.
 
 Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
-- Scrum Master: Felipe Domingos;
-- Product Owner: Rommel Carneiro;
-- Equipe de Desenvolvimento: Pedro Penna, Pedro Ivo, Rodrigo Richard;
-- Equipe de Design: Simone Nogueira.
+
+- Scrum Master: Leticia Pauli;
+- Product Owner: Douglas Zoccarato;
+- Equipe de Desenvolvimento: Gustavo Santos, Matheus Rios;
+- Equipe de Design: Leticia Pauli.
+
 
 > **Links Úteis**:
 > - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
@@ -60,28 +84,30 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo deverá fazer uso do recurso de gerenciamento de projeto oferecido pelo GitHub, que permite acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Planejamento e Gestáo Ágil de Projetos](https://pucminas.instructure.com/courses/87878/pages/unidade-2-tema-2-utilizacao-de-ferramentas-para-controle-de-versoes-de-software)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards)
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+Para desenvolver um software de gerenciamento de cafeteria envolve uma série de etapas e processos cuidadosamente planejados para criar uma solução eficaz e adaptada às necessidades específicas desse setor. O processo pode ser dividido em várias fases, desde a concepção da ideia até a implementação e manutenção do produto final.
+
+1. Levantamento de Requisitos: A primeira etapa do processo envolve compreender completamente as necessidades dos clientes e as demandas do mercado de cafeterias. Isso inclui a realização de pesquisas de mercado, entrevistas com proprietários de cafeterias e análise de concorrentes para identificar funcionalidades essenciais e recursos desejáveis.
+
+2. Design e Prototipagem: Com base nos requisitos levantados, os designers de UX/UI criam esboços, wireframes e protótipos do software. Esse processo permite visualizar como será a interface do usuário e validar o fluxo de navegação antes da implementação.
+
+3. Desenvolvimento do Software: Os desenvolvedores trabalham para transformar os designs e protótipos em um software funcional. Isso envolve a codificação das funcionalidades, integração com sistemas de pagamento, desenvolvimento de aplicativos móveis (se aplicável) e implementação de recursos de segurança.
+
+4. Testes e Qualidade: Antes do lançamento, o software passa por rigorosos testes de qualidade para garantir que todas as funcionalidades estejam funcionando corretamente e que não haja bugs ou falhas. Isso inclui testes de unidade, integração, sistema e aceitação do usuário.
+
+5. Lançamento e Implementação: Uma vez que o software tenha sido testado e aprovado, ele está pronto para o lançamento. Durante essa fase, o software é implantado nos sistemas dos clientes, e a equipe de suporte oferece treinamento e assistência para garantir uma transição suave.
+
+6. Monitoramento e Manutenção: Após o lançamento, o software é continuamente monitorado para garantir seu desempenho e segurança. As atualizações e correções de bugs são lançadas conforme necessário para manter o software funcionando de forma eficiente e atender às necessidades em evolução dos clientes.
+
+7. Feedback e Melhoria Contínua: O processo de desenvolvimento não termina com o lançamento. A equipe continua a coletar feedback dos usuários e a realizar melhorias incrementais com base nesse feedback para garantir que o software permaneça relevante e competitivo no mercado de cafeterias em constante mudança.
+
+Desenvolver um software de gerenciamento de cafeteria é um processo complexo que requer colaboração entre designers, desenvolvedores, especialistas em qualidade e equipes de suporte para criar e manter uma solução eficaz e centrada no cliente.
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
+As ferramentas empregadas no projeto serão:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
-
-O editor de código foi escolhido porque ele possui uma integração com o sistema de versão. As ferramentas de comunicação utilizadas possuem integração semelhante e por isso foram selecionadas. Por fim, para criar diagramas utilizamos essa ferramenta por melhor captar as necessidades da nossa solução.
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
+Repositório de Código Fonte: Github
+Gerenciamento do Projeto: GitHub
+Ferramenta de Comunicação: Aplicativo Teams
+Editor de Código: XXXXXX
+Ferramentas de desenho de telas, diagramas e fluxogramas: poderão ser usados o LucidChart, InvisionApp e o Figma.
