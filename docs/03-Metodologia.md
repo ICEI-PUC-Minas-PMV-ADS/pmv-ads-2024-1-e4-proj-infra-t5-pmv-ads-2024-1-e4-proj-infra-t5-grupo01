@@ -65,7 +65,7 @@ To Do: atividades da sprint atual;
 Doing: atividades iniciadas e em andamento;
 Done: atividades concluídas e prontas para entrega.
 
-![GitHub](img/gerenciamento.png)
+![GitHub](img/gerenciamento.jgp)
 
 Apresente a divisão de papéis entre os membros do grupo.
 
