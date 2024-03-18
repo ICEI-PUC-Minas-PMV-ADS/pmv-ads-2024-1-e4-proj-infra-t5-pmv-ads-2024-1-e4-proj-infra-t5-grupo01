@@ -4,8 +4,6 @@ Nesta seção são apresentadas as implementações iniciais das diversas telas 
 
 A seguir, apresentamos as telas do aplicativo e uma parte dos artefatos do código.
 
-# Programação de Funcionalidades WEB
-
 A medida que os requisitos funcionais foram implementados na aplicação, foram gerados artefatos. A correlação está descrita na tabela abaixo:
 
 |ID    | Descrição do Requisito  | Artefato(s) produzido(s) |
@@ -24,7 +22,7 @@ A medida que os requisitos funcionais foram implementados na aplicação, foram 
 |RF-012|A aplicação deve permitir o cadastro e atualização dos produtos de estoque pelos funcionários|XXXXX| 
 
 
-# Programação de Funcionalidades Mobile
+# Mobile
 
 
 #### RF-001	A aplicação deve apresentar na página principal informações sobre a história da cafeteria
