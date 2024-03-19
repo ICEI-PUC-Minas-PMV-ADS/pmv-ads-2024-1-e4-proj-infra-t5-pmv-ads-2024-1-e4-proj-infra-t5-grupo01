@@ -1,11 +1,19 @@
 # Plano de Testes de Usabilidade
 
-O teste de usabilidade permite avaliar a qualidade da interface com o usuário da aplicação interativa. O Plano de Testes de Software é gerado a partir da especificação do sistema e consiste em casos de testes que deverão ser executados quando a implementação estiver parcial ou totalmente pronta.
+Para o teste de usabilidade, será realizado um questionário de UX através da plataforma Google Forms, onde os usuários testados responderão às seguintes perguntas com cinco opções de respostas (Discordo totalmente / Discordo / Neutro / Concordo / Concordo totalmente): 
 
-As referências abaixo irão auxiliá-lo na geração do artefato "Plano de Testes de Usabilidade".
-
-> **Links Úteis**:
-> - [Teste De Usabilidade: O Que É e Como Fazer Passo a Passo (neilpatel.com)](https://neilpatel.com/br/blog/teste-de-usabilidade/)
-> - [Teste de usabilidade: tudo o que você precisa saber! | by Jon Vieira | Aela.io | Medium](https://medium.com/aela/teste-de-usabilidade-o-que-voc%C3%AA-precisa-saber-39a36343d9a6/)
-> - [Planejando testes de usabilidade: o que (e o que não) fazer | iMasters](https://imasters.com.br/design-ux/planejando-testes-de-usabilidade-o-que-e-o-que-nao-fazer/)
-> - [Ferramentas de Testes de Usabilidade](https://www.usability.gov/how-to-and-tools/resources/templates.html)
+    1. Acho que gostaria de usar este sistema com frequência
+    2. Achei o sistema desnecessariamente complexo.
+    3. Achei o sistema fácil de usar.
+    4. Achei que seria necessário o apoio de um técnico para poder usar este sistema.
+    5. As funções deste sistema estavam bem integradas.
+    6. Achei este sistema muito inconsistente.
+    7. Imagino que a maioria das pessoas aprenderiam a usar este sistema rapidamente.
+    8. Achei o sistema muito complicado de usar.
+    9. Eu me senti muito confiante com o sistema.
+    10. Eu preciso aprender um monte de coisas antes de continuar usando este sistema.
+    11. Eu me senti confortável com este sistema.
+    12. Foi fácil encontrar a informação que eu precisava.
+    13. Eu gostei de usar a interface do sistema.
+    14. A interface do sistema é agradável.
+    15. A organização de informações na tela do sistema é clara.
