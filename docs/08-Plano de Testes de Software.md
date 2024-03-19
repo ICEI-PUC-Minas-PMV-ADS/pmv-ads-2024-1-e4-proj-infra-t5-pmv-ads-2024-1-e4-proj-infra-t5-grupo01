@@ -22,50 +22,50 @@ Comente sobre as ferramentas de testes utilizadas.
 
 
 
-## Plano de Testes de Software: Aplicativo BluCoffee 
+# Plano de Testes de Software: Aplicativo BluCoffee 
 
-# Objetivo:
+## Objetivo:
 
 O objetivo deste plano de testes é garantir que o aplicativo BluCoffee, uma plataforma acessível e interativa para recursos de uma cafeteria, seja desenvolvido e entregue com alta qualidade, garantindo funcionalidades adequadas, desempenho otimizado e uma experiência do usuário satisfatória.
 
-# Escopo:
+## Escopo:
 O plano de testes cobrirá todas as principais funcionalidades do aplicativo BluCoffee, incluindo:
 
-1.Registro e login de usuários.
-2.Visualização do cardápio.
-3.Realização de pedidos.
-4.Processamento de pagamentos.
-5.Gerenciamento de informações do usuário.
+1.Registro e login de usuários.</br>
+2.Visualização do cardápio.</br>
+3.Realização de pedidos.</br>
+4.Processamento de pagamentos.</br>
+5.Gerenciamento de informações do usuário.</br>
 
 # Testes:
 
-#Testes de Unidade:
+# Testes de Unidade: </br>
 Testar individualmente cada componente do aplicativo, garantindo que funcionem corretamente de acordo com suas especificações.
 
-#Testes de Integração:
+# Testes de Integração:</br>
 Testar a integração entre diferentes componentes do aplicativo para garantir que trabalhem juntos sem problemas.
 
-#Testes de Sistema:
+# Testes de Sistema: </br>
 Testar o aplicativo como um todo para garantir que todas as funcionalidades estejam operando conforme o esperado.
 
-#Testes de Usabilidade:
+# Testes de Usabilidade: </br>
 Avaliar a facilidade de uso do aplicativo, a clareza das instruções e a navegabilidade para garantir uma experiência do usuário intuitiva.
 
-#Testes de Desempenho:
+# Testes de Desempenho: </br>
 Avaliar o desempenho do aplicativo em diferentes condições de carga para garantir que ele responda de forma rápida e eficiente.
 
-#Critérios de Aceitação:
+# Critérios de Aceitação: </br>
 
 Todas as funcionalidades do aplicativo devem estar operando conforme as especificações.
 O aplicativo deve ser intuitivo e fácil de usar para os usuários.
 O desempenho do aplicativo deve ser satisfatório em diferentes condições.
 
-#Plano de Contingência:
+# Plano de Contingência:
 
 Em caso de descoberta de problemas graves durante os testes, a equipe de desenvolvimento será notificada imediatamente para correção.
 Se os problemas persistirem e afetarem significativamente a qualidade ou funcionalidade do aplicativo, consideraremos adiar o lançamento até que os problemas sejam resolvidos.
 
-#Responsabilidades:
+# Responsabilidades:
 A equipe de desenvolvimento é responsável por fornecer versões do aplicativo para teste.
 A equipe de teste é responsável por executar os testes conforme planejado e relatar quaisquer problemas encontrados à equipe de desenvolvimento.
 Este plano de testes será revisado e ajustado conforme necessário durante o processo de desenvolvimento para garantir a cobertura adequada e a qualidade do aplicativo BluCoffee.
