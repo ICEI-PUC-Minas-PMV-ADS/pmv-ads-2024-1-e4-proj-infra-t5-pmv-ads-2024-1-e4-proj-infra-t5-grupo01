@@ -39,36 +39,36 @@ O plano de testes cobrirá todas as principais funcionalidades do aplicativo Blu
 
 # Testes:
 
-# Testes de Unidade: </br>
+### Testes de Unidade: </br>
 Testar individualmente cada componente do aplicativo, garantindo que funcionem corretamente de acordo com suas especificações.
 
-# Testes de Integração:</br>
+### Testes de Integração:</br>
 Testar a integração entre diferentes componentes do aplicativo para garantir que trabalhem juntos sem problemas.
 
-# Testes de Sistema: </br>
+### Testes de Sistema: </br>
 Testar o aplicativo como um todo para garantir que todas as funcionalidades estejam operando conforme o esperado.
 
-# Testes de Usabilidade: </br>
+### Testes de Usabilidade: </br>
 Avaliar a facilidade de uso do aplicativo, a clareza das instruções e a navegabilidade para garantir uma experiência do usuário intuitiva.
 
-# Testes de Desempenho: </br>
+### Testes de Desempenho: </br>
 Avaliar o desempenho do aplicativo em diferentes condições de carga para garantir que ele responda de forma rápida e eficiente.
 
-# Critérios de Aceitação: </br>
+## Critérios de Aceitação: </br>
 
-Todas as funcionalidades do aplicativo devem estar operando conforme as especificações.
-O aplicativo deve ser intuitivo e fácil de usar para os usuários.
-O desempenho do aplicativo deve ser satisfatório em diferentes condições.
+Todas as funcionalidades do aplicativo devem estar operando conforme as especificações.</br>
+O aplicativo deve ser intuitivo e fácil de usar para os usuários.</br>
+O desempenho do aplicativo deve ser satisfatório em diferentes condições.</br>
 
-# Plano de Contingência:
+## Plano de Contingência:
 
-Em caso de descoberta de problemas graves durante os testes, a equipe de desenvolvimento será notificada imediatamente para correção.
+Em caso de descoberta de problemas graves durante os testes, a equipe de desenvolvimento será notificada imediatamente para correção.</br>
 Se os problemas persistirem e afetarem significativamente a qualidade ou funcionalidade do aplicativo, consideraremos adiar o lançamento até que os problemas sejam resolvidos.
 
-# Responsabilidades:
-A equipe de desenvolvimento é responsável por fornecer versões do aplicativo para teste.
-A equipe de teste é responsável por executar os testes conforme planejado e relatar quaisquer problemas encontrados à equipe de desenvolvimento.
-Este plano de testes será revisado e ajustado conforme necessário durante o processo de desenvolvimento para garantir a cobertura adequada e a qualidade do aplicativo BluCoffee.
+## Responsabilidades:
+A equipe de desenvolvimento é responsável por fornecer versões do aplicativo para teste.</br>
+A equipe de teste é responsável por executar os testes conforme planejado e relatar quaisquer problemas encontrados à equipe de desenvolvimento.</br>
+Este plano de testes será revisado e ajustado conforme necessário durante o processo de desenvolvimento para garantir a cobertura adequada e a qualidade do aplicativo BluCoffee.</br>
 
 
 
