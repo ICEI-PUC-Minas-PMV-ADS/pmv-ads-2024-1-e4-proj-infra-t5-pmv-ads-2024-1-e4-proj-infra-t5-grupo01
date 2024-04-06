@@ -29,8 +29,26 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
 
 ## Tecnologias Utilizadas
+Tecnologias Utilizadas
+Segue as tecnologias que foram utilizadas para a realização (desenvolvimento) desta aplicação distribuída.
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+### Linguagens de programação utilizada:
+#### Desenvolvimento do backend:
+
+#### Desenvolvimento do frontend:
+HTML: Linguagem de marcação utilizada para estruturar e criar o conteúdo da web. </br>
+CSS: Linguagem de folha de estilo utilizada para formatar e estilizar páginas criadas com HTML.</br>
+JavaScript: Linguagem utilizada para adcionar interatividade e dinamismo da página web.</br>
+#### IDE utilizada: </br>
+Visual Studio Community: Foi escolhido devido a sua integração com o framework ASP.NET.</br> 
+#### Banco NoSQL utilizado: </br> 
+MongoDB: Escolhemos este software devido ao fato de que cuida do armazenamento, atualização e recuperação de dados computacionais, permitindo toda esta administração de forma remota (através de rede / internet).</br>
+#### Outras tecnologias utilizadas:</br>
+Lucidchart: Ferramenta utilizada para o design dos diagramas.</br>
+GitProjects: Ferramenta utilizada para realizar a gestão das tarefas do projeto.</br>
+Canva: Ferramenta utilizada para criar os wireframes do projeto.
+
+
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
