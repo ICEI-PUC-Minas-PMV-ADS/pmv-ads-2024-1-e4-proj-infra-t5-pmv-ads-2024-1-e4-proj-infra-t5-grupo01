@@ -4,6 +4,9 @@ import axios from 'axios';
 const Stock = () => {
 
     const [products, setProducts] = useState([]);
+    const [name, setName] = useState('');
+    const [description, setDescription] = useState('');
+    const [quantity, setQuantity] = useState('');
 
     useEffect(()=>{
         loadProducts();
@@ -15,9 +18,55 @@ const Stock = () => {
         console.log(result.data);
     }
 
+    const deleteProducts = async(name) => {
+        try {
+        await axios.delete(`http://localhost:8080/api/products/delete/${name}`);
+    } catch (error) {
+        console.error('Erro ao excluir produto:', error);
+    }
+    loadProducts();
+    }
+
+    const saveProduct = async () => {
+        try {
+            await axios.post("http://localhost:8080/api/save-products", {
+                name,
+                description,
+                quantity: parseInt(quantity) 
+            });
+            setName('');
+            setDescription('');
+            setQuantity('');
+            
+        } catch (error) {
+            console.error('Erro ao adicionar produto:', error);
+        }
+
+        loadProducts();
+    }
+
   return (
     <div className='container'>
         <div className='py-4'>
+            <input
+                        type="text"
+                        placeholder="Nome"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Descrição"
+                        value={description}
+                        onChange={(e) => setDescription(e.target.value)}
+                    />
+                    <input
+                        type="text"
+                        placeholder="Quantidade"
+                        value={quantity}
+                        onChange={(e) => setQuantity(e.target.value)}
+                    />
+                    <button onClick={saveProduct}>Adicionar Produto</button>
             <table className="table border shadow">
                 <thead>
                     <tr>
@@ -35,6 +84,7 @@ const Stock = () => {
                                 <td>{products.name}</td>
                                 <td>{products.description}</td>
                                 <td>{products.quantity}</td>
+                                <td><button onClick={() => deleteProducts(products.name)}>Delete</button></td>
                             </tr>
                         ))
                     }

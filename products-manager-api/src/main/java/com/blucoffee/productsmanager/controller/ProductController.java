@@ -36,7 +36,7 @@ public class ProductController {
         productService.updateProduct(product);
     }
 
-    @DeleteMapping("/products/{name}")
+    @DeleteMapping("/products/delete/{document}")
     public void deleteProduct(@PathVariable String document) throws ExecutionException, InterruptedException {
         productService.deleteProduct(document);
     }
