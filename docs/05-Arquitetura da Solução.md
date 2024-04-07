@@ -27,7 +27,8 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 ![Arquitetura da Solução](img/EsquemaRelacional.png)
 ## Modelo Físico 
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Nosso banco NoSQL está estruturado dentro da solução em nuvem Firestore do ecossistema Firebase.</br>
+https://firebase.google.com/docs/firestore?hl=pt-br
 
 ## Tecnologias Utilizadas
 Tecnologias Utilizadas
