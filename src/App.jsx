@@ -1,4 +1,5 @@
 import "./App.css";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
@@ -11,6 +12,7 @@ import { useAuthentication } from "./hooks/useAuthentication";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Post from "./pages/Post/Post";
+import Stock from "./pages/StockManager/Stock";
 
 // components
 import Navbar from "./components/Navbar";
@@ -24,6 +26,7 @@ import EditPost from "./pages/EditPost/EditPost";
 
 // context
 import { AuthProvider } from "./contexts/AuthContext";
+
 
 function App() {
   const [user, setUser] = useState(undefined);
@@ -71,6 +74,10 @@ function App() {
               <Route
                 path="/dashboard"
                 element={user ? <Dashboard /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/stock"
+                element={user ? <Stock /> : <Navigate to="/login" />}
               />
             </Routes>
           </div>
