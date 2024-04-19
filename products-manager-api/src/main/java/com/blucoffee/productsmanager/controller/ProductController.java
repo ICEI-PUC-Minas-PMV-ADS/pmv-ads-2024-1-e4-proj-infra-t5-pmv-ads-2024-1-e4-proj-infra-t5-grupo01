@@ -21,7 +21,7 @@ public class ProductController {
         productService.saveProduct(product);
     }
 
-    @GetMapping("/products/{name}")
+    @GetMapping("/products/{documentName}")
     public Product getProduct(@PathVariable String documentName) throws ExecutionException, InterruptedException {
         return productService.getProductDetails(documentName);
     }

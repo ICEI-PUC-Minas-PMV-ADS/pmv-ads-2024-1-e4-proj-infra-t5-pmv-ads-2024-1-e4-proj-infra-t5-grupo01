@@ -13,6 +13,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Post from "./pages/Post/Post";
 import Stock from "./pages/StockManager/Stock";
+import StockReport from "./pages/StockManager/StockReport";
 
 // components
 import Navbar from "./components/Navbar";
@@ -78,6 +79,10 @@ function App() {
               <Route
                 path="/stock"
                 element={user ? <Stock /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/stock-report"
+                element={user ? <StockReport /> : <Navigate to="/login" />}
               />
             </Routes>
           </div>
