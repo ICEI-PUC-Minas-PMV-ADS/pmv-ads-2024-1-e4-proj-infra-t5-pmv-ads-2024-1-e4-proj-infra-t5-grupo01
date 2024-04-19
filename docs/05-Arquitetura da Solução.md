@@ -10,12 +10,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+O diagrama de classes utilizado é similar a um sistema POS (point of sales) onde o usuário pode realizar seus pedidos de produtos localmente, o estabelecimento cadastrar produtos e assim é gerado um pedido que em conjunto são atrelados a uma conta daquele usuário. Ainda, cabe fechar a conta e definir os meios de pagamento.
+![Diagrama de classes](img/DiagramaClasse.png)
 
 ## Modelo ER
 
@@ -27,23 +23,29 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 ![Arquitetura da Solução](img/EsquemaRelacional.png)
 ## Modelo Físico 
 
-Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do banco de dados. Este arquivo deverá ser incluído dentro da pasta src\bd.
+Nosso banco NoSQL está estruturado dentro da solução em nuvem Firestore do ecossistema Firebase.</br>
+https://firebase.google.com/docs/firestore?hl=pt-br
 
 ## Tecnologias Utilizadas
 Tecnologias Utilizadas
 Segue as tecnologias que foram utilizadas para a realização (desenvolvimento) desta aplicação distribuída.
 
 ### Linguagens de programação utilizada:
-#### Desenvolvimento do backend:
 
+#### Desenvolvimento do backend:
+- Java
 #### Desenvolvimento do frontend:
-HTML: Linguagem de marcação utilizada para estruturar e criar o conteúdo da web. </br>
-CSS: Linguagem de folha de estilo utilizada para formatar e estilizar páginas criadas com HTML.</br>
-JavaScript: Linguagem utilizada para adcionar interatividade e dinamismo da página web.</br>
+Front Web:
+- Framework: React
+- HTML: Linguagem de marcação utilizada para estruturar e criar o conteúdo da web. </br>
+- CSS: Linguagem de folha de estilo utilizada para formatar e estilizar páginas criadas com HTML.</br>
+- JavaScript: Linguagem utilizada para adcionar interatividade e dinamismo da página web.</br>
 #### IDE utilizada: </br>
-Visual Studio Community: Foi escolhido devido a sua integração com o framework ASP.NET.</br> 
+- Visual Studio Code</br> 
+- Intellij</br> 
 #### Banco NoSQL utilizado: </br> 
-MongoDB: Escolhemos este software devido ao fato de que cuida do armazenamento, atualização e recuperação de dados computacionais, permitindo toda esta administração de forma remota (através de rede / internet).</br>
+- Google Firestore
+- MongoDB: Escolhemos este software devido ao fato de que cuida do armazenamento, atualização e recuperação de dados computacionais, permitindo toda esta administração de forma remota (através de rede / internet).</br>
 #### Outras tecnologias utilizadas:</br>
 Lucidchart: Ferramenta utilizada para o design dos diagramas.</br>
 GitProjects: Ferramenta utilizada para realizar a gestão das tarefas do projeto.</br>
