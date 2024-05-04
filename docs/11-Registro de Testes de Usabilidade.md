@@ -22,6 +22,10 @@ O formulário foi respondido por 2 participantes externos, que puderam ver a exe
 - Todos concordaram que a organização de informações na tela do sistema é clara;
 - Os usuários se sentiram confiantes e confortáveis ao usar o aplicativo, e não acham que precisariam aprender muitas coisas para ser capaz de usar o sistema.
 
+  </br>
+  [Teste de usabilidade 2.csv.zip](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/files/15211124/Teste.de.usabilidade.2.csv.zip)
+
+
 ## Conclusão
 
 As expectativas do grupo foram atingidas com relação à usabilidade do aplicativo, tendo em vista que as metas que colocamos de aprovação dos critérios no plano de teste foram alcançadas ao receber o feedback dos participantes. No futuro, podem surgir novas ideias para aprimorar cada vez mais a nossa aplicação.
