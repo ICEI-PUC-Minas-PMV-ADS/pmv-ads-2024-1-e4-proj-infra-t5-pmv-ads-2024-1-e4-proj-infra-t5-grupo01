@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "135210878858",
+    "project_id": "blucoffee-ae7ef",
+    "storage_bucket": "blucoffee-ae7ef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135210878858:android:8ecdf07977e3617f33ea73",
+        "android_client_info": {
+          "package_name": "com.meuapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZ_ah6gn_2yJOj_afrJZY-Ro04zAqkXQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

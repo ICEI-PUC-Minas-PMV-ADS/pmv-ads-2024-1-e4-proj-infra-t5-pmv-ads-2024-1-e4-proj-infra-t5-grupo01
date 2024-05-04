@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">135210878858</string>
+    <string name="google_api_key" translatable="false">AIzaSyCZ_ah6gn_2yJOj_afrJZY-Ro04zAqkXQo</string>
+    <string name="google_app_id" translatable="false">1:135210878858:android:8ecdf07977e3617f33ea73</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCZ_ah6gn_2yJOj_afrJZY-Ro04zAqkXQo</string>
+    <string name="google_storage_bucket" translatable="false">blucoffee-ae7ef.appspot.com</string>
+    <string name="project_id" translatable="false">blucoffee-ae7ef</string>
+</resources>
