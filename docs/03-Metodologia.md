@@ -13,11 +13,11 @@ Os artefatos do projeto serão desenvolvidos a partir das plataformas listadas a
 |Repositório de código-fonte    |GitHub      |[GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/tree/main)|
 |Documentos do projeto          |Google Docs|[Google Docs](https://docs.google.com/document/d/1KvXyCyd7VwPn308cMu5XoW9Syf9pnWuBRs-b3akDa5w/edit)                               | 
 |Gerenciamento do projeto       | GitHub    |[GitHub]()                               |
-|Gerenciamento de diagramas     |XXXX |[XXXXXX](xxxxxxx)                                                    | 
-|Gerenciamento de wireframes    |XXXXXX|[XXXXXXXXXX](XXXXXXX)                       | 
-|Gerenciamento do banco de dados|Firebase| [Firebase](xxxxxxxxx)                                                                             |
+|Gerenciamento de diagramas     | InvisionApp |[InvisionApp](https://leticiapauli6777.invisionapp.com/freehand/BluCoffe-jueylP5Vi)                                                  | 
+|Gerenciamento de wireframes    | InvisionApp |[InvisonApp](https://leticiapauli6777.invisionapp.com/freehand/BluCoffe-jueylP5Vi)                       | 
+|Gerenciamento do banco de dados|Firebase| [Firebase](https://console.firebase.google.com/project/blucoffee-ae7ef/overview)                                                                            |
 |Gerenciamento de código-fonte|GitHub|    [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/tree/main)                                                                                                                |
-|Serviço de hospedagem da aplicação|XXXXXXXX|[XXXXXX](xxxxxx)           
+|Serviço de hospedagem da aplicação|Web - AZURE / Mobile - LocalHost|[XXXXXX](xxxxxx)           
 
 
 ## Controle de Versão
@@ -65,7 +65,7 @@ To Do: atividades da sprint atual;
 Doing: atividades iniciadas e em andamento;
 Done: atividades concluídas e prontas para entrega.
 
-![GitHub](img/gerenciamento.jgp)
+![GitHub](img/gerenciamento.png)
 
 Apresente a divisão de papéis entre os membros do grupo.
 
@@ -106,8 +106,8 @@ Desenvolver um software de gerenciamento de cafeteria é um processo complexo qu
 
 As ferramentas empregadas no projeto serão:
 
-Repositório de Código Fonte: Github
-Gerenciamento do Projeto: GitHub
-Ferramenta de Comunicação: Aplicativo Teams
-Editor de Código: XXXXXX
-Ferramentas de desenho de telas, diagramas e fluxogramas: poderão ser usados o LucidChart, InvisionApp e o Figma.
+Repositório de Código Fonte: Github </br>
+Gerenciamento do Projeto: GitHub </br>
+Ferramenta de Comunicação: Aplicativo Teams </br>
+Editor de Código: VScode </br>
+Ferramentas de desenho de telas, diagramas e fluxogramas: poderão ser usados o LucidChart, InvisionApp e o Figma.</br>
