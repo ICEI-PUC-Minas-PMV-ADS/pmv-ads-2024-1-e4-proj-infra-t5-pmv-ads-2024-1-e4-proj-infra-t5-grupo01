@@ -50,7 +50,8 @@ Front Web:
 #### Outras tecnologias utilizadas:</br>
 Lucidchart: Ferramenta utilizada para o design dos diagramas.</br>
 GitProjects: Ferramenta utilizada para realizar a gestão das tarefas do projeto.</br>
-Canva: Ferramenta utilizada para criar os wireframes do projeto.
+Canva: Ferramenta utilizada para criar as personas do projeto.</br>
+InvisionApp: Ferramenta utilizada para criar os wireframes do projeto.
 
 
 
