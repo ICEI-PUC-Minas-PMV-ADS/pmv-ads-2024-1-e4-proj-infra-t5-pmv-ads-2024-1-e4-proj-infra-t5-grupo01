@@ -4,7 +4,18 @@
 
 ## Teste de Software
 
+Alguns scripts foram utilizados para executar os testes unitários com Jest:
 
+![Teste 01](img/teste1.png) </br>
+![Teste 02](img/teste2.png) </br>
+![Teste 03](img/teste3.png) </br>
+![Teste 04](img/teste4.png) </br>
+![Teste 05](img/teste5.png) </br>
+![Teste 06](img/teste6.png) </br>
+![Teste 07](img/teste7.png) </br>
+![Teste 08](img/teste8.png) </br>
+![Teste 09](img/teste9.png) </br>
+![Teste 10](img/teste10.png) </br>
 
 
 ## Avaliação
