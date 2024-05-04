@@ -1,16 +1,11 @@
-import {
-    getAuth,
-    createUserWithEmailAndPassword,
-    signInWithEmailAndPassword,
-    updateProfile,
-    signOut,
-  } from "firebase/auth";
-  
-  import { useState, useEffect } from "react";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut,} from "firebase/auth";
+import { useState, useEffect } from "react";
+import useInsertUser from "./useInsertUser";
   
   export const useAuthentication = () => {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(null);
+    const { insertUserDocument } = useInsertUser("users");
   
     // deal with memory leak
     const [cancelled, setCancelled] = useState(false);
@@ -37,6 +32,12 @@ import {
   
         await updateProfile(user, {
           displayName: data.displayName,
+        });
+
+        await insertUserDocument(user.uid, {
+        name: data.displayName,
+        email: data.email,
+        role: "adm",
         });
   
         return user;

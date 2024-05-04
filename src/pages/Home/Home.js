@@ -1,32 +1,42 @@
-// CSS
-import styles from "./Home.module.css";
-
-// hooks
-import { useFetchDocuments } from "../../hooks/useFetchDocuments";
-import { useNavigate, Link } from "react-router-dom";
-
-// react
-import { useState } from "react";
-
-// components
-import PostDetail from "../../components/PostDetail";
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import PostDetail from '../../components/PostDetail';
+import styles from './Home.module.css';
 
 const Home = () => {
-  const { documents: posts, loading } = useFetchDocuments("posts");
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [query, setQuery] = useState('');
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/posts-api/posts/getAll');
+        setPosts(response.data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching posts:', error);
+        setLoading(false);
+      }
+    };
 
-  const [query, setQuery] = useState("");
+    fetchPosts();
+  }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-
     if (query) {
-      return navigate(`/search?q=${query}`);
+      try {
+        const response = await axios.get(`http://localhost:8080/posts-api/posts/search?query=${query}`);
+        setPosts(response.data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error searching posts:', error);
+        setLoading(false);
+      }
     }
   };
-
-  console.log(loading);
 
   return (
     <div className={styles.home}>
@@ -35,6 +45,7 @@ const Home = () => {
         <input
           type="text"
           placeholder="Ou busque por tags..."
+          value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
         <button className="btn btn-dark">Pesquisar</button>

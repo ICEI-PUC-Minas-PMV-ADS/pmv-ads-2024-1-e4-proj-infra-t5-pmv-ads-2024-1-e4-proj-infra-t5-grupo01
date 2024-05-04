@@ -2,13 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAYktk4Ux-rD7QkiFtqPjIGmdX0E1FtyH0",
-    authDomain: "cafeteria-720cb.firebaseapp.com",
-    projectId: "cafeteria-720cb",
-    storageBucket: "cafeteria-720cb.appspot.com",
-    messagingSenderId: "1052200271980",
-    appId: "1:1052200271980:web:94933d87243581435bd849"
-  };
+  apiKey: "AIzaSyCt-QYo9qRqcRfJkk0WcIBiaBJFEV4jK1M",
+  authDomain: "blucoffee-ae7ef.firebaseapp.com",
+  projectId: "blucoffee-ae7ef",
+  storageBucket: "blucoffee-ae7ef.appspot.com",
+  messagingSenderId: "135210878858",
+  appId: "1:135210878858:web:51cbd504a749d6d633ea73",
+  measurementId: "G-HVRBBQRL10"
+};
 
 const app = initializeApp(firebaseConfig);
 
