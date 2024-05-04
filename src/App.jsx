@@ -24,6 +24,8 @@ import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import EditPost from "./pages/EditPost/EditPost";
+import Menu from "./pages/Menu/Menu";
+import SalesReport from "./pages/SalesReport/SalesReport";
 
 // context
 import { AuthProvider } from "./contexts/AuthContext";
@@ -83,6 +85,14 @@ function App() {
               <Route
                 path="/stock-report"
                 element={user ? <StockReport /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/menu"
+                element={user ? <Menu /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/sales-report"
+                element={user ? <SalesReport /> : <Navigate to="/login" />}
               />
             </Routes>
           </div>

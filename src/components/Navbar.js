@@ -70,6 +70,22 @@ const Navbar = () => {
                 Estoque
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/menu"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Menu
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/sales-report"
+                className={({ isActive }) => (isActive ? styles.active : "")}
+              >
+                Relatório de Vendas
+              </NavLink>
+            </li>
           </>
         )}
         <li>
