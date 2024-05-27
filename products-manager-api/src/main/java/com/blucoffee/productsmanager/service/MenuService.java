@@ -18,7 +18,7 @@ public class MenuService {
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
 
-        dbFirestore.collection(COLLECTION_NAME).document(String.valueOf(menu.getId())).set(menu);
+        dbFirestore.collection(COLLECTION_NAME).document(menu.getTitle()).set(menu);
     }
 
     public Menu getMenuDetails(String documentName) throws ExecutionException, InterruptedException {
@@ -54,7 +54,7 @@ public class MenuService {
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
 
-        dbFirestore.collection(COLLECTION_NAME).document(String.valueOf(menu.getId())).set(menu);
+        dbFirestore.collection(COLLECTION_NAME).document(menu.getTitle()).set(menu);
     }
 
     public void deleteMenu(String document){

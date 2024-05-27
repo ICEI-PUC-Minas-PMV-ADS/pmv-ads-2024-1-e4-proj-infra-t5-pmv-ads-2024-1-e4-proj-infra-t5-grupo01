@@ -1,5 +1,4 @@
 import styles from "./CreatePost.module.css";
-
 import { useState } from "react";
 import { useInsertDocument } from "../../hooks/useInsertDocument";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +8,7 @@ const CreatePost = () => {
   const [title, setTitle] = useState("");
   const [image, setImage] = useState("");
   const [body, setBody] = useState("");
-  const [tags, setTags] = useState([]);
+  const [tags, setTags] = useState("");
   const [formError, setFormError] = useState("");
 
   const { user } = useAuthValue();
@@ -27,6 +26,7 @@ const CreatePost = () => {
       new URL(image);
     } catch (error) {
       setFormError("A imagem precisa ser uma URL.");
+      return;
     }
 
     // create tags array
@@ -35,20 +35,8 @@ const CreatePost = () => {
     // check values
     if (!title || !image || !tags || !body) {
       setFormError("Por favor, preencha todos os campos!");
+      return;
     }
-
-    console.log(tagsArray);
-
-    console.log({
-      title,
-      image,
-      body,
-      tags: tagsArray,
-      uid: user.uid,
-      createdBy: user.displayName,
-    });
-
-    if(formError) return
 
     insertDocument({
       title,
@@ -111,10 +99,10 @@ const CreatePost = () => {
             value={tags}
           />
         </label>
-        {!response.loading && <button className="btn">Criar post!</button>}
+        {!response.loading && <button className="btn btn-primary btn-sm print-button">Criar post!</button>}
         {response.loading && (
           <button className="btn" disabled>
-            Aguarde.. .
+            Aguarde...
           </button>
         )}
         {(response.error || formError) && (

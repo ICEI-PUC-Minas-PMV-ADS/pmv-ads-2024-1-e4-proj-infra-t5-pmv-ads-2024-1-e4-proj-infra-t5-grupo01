@@ -1,96 +1,58 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const SalesReport = () => {
-  const [salesData, setSalesData] = useState([
-    { id: 1, date: '2024-05-01', product: 'Café', quantity: 50, total: 250 },
-    { id: 2, date: '2024-05-02', product: 'Bolo', quantity: 20, total: 100 },
-    {
-      id: 3,
-      date: '2024-05-03',
-      product: 'Sanduíche',
-      quantity: 30,
-      total: 150,
-    },
-  ]);
+    const [orders, setOrders] = useState([]);
 
-  const handleAdd = id => {
-    setSalesData(prevSalesData =>
-      prevSalesData.map(item => {
-        if (item.id === id) {
-          return { ...item, total: item.total + 1 };
+    useEffect(() => {
+        loadOrders();
+    }, []);
+
+    const loadOrders = async () => {
+        try {
+            const result = await axios.get("http://localhost:8080/order-api/order/getAll");
+            setOrders(result.data);
+        } catch (error) {
+            alert('Erro ao carregar produtos. Por favor, tente novamente mais tarde.');
         }
-        return item;
-      })
-    );
-  };
+    }
 
-  const handleRemove = id => {
-    setSalesData(prevSalesData =>
-      prevSalesData.map(item => {
-        if (item.id === id && item.total > 0) {
-          return { ...item, total: item.total - 1 };
-        }
-        return item;
-      })
-    );
-  };
+    const printPage = () => {
+        window.print();
+    }
 
-  const handleSave = () => {
-    console.log('Alterações salvas!');
-  };
-
-  const handleDiscardChanges = () => {
-    console.log('Alterações descartadas!');
-  };
-
-  return (
-    <div className="table-container">
-      <h2>Relatório de Vendas</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Data</th>
-            <th>Produto</th>
-            <th>Quantidade</th>
-            <th>Valor Total</th>
-            <th>Ações</th>
-          </tr>
-        </thead>
-        <tbody>
-          {salesData.map((sale, index) => (
-            <tr key={index}>
-              <td>{sale.date}</td>
-              <td>{sale.product}</td>
-              <td>{sale.quantity}</td>
-              <td>{sale.total}</td>
-            </tr>
-          ))}
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colSpan="5" style={{ textAlign: 'right', paddingTop: '20px' }}>
-              <button
-                style={{
-                  backgroundColor: 'blue',
-                  color: 'white',
-                  marginRight: '5px',
-                }}
-                onClick={handleSave}
-              >
-                Salvar
-              </button>
-              <button
-                style={{ backgroundColor: 'grey', color: 'white' }}
-                onClick={handleDiscardChanges}
-              >
-                Descartar Alterações
-              </button>
-            </td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
-  );
-};
+    return (
+        <div className='container'>
+            <div className='py-4'>
+                <h2>Relatório de Vendas</h2>
+                <button type="button" className="btn btn-primary btn-sm print-button" onClick={printPage}>
+                        Imprimir
+                </button>
+                <table className="table border shadow">
+                    <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Produto</th>
+                          <th scope="col">Quantidade</th>
+                          <th scope="col">Valor Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            orders.map((orders, index)=>(
+                                <tr>
+                                    <th scope="row" key={index}>{index + 1}</th>
+                                    <td>{orders.menuItem.title}</td>
+                                    <td>{orders.quantity}</td>
+                                    <td>R$ {orders.total}</td>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    )
+}
 
 export default SalesReport;

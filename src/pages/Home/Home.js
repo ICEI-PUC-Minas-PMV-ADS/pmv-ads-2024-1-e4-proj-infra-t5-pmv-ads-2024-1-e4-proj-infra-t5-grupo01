@@ -8,15 +8,16 @@ const Home = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
     const fetchPosts = async () => {
       try {
         const response = await axios.get('http://localhost:8080/posts-api/posts/getAll');
         setPosts(response.data);
-        setLoading(false);
       } catch (error) {
-        console.error('Error fetching posts:', error);
+        setError('Erro ao carregar os posts. Tente novamente mais tarde.');
+      } finally {
         setLoading(false);
       }
     };
@@ -26,13 +27,15 @@ const Home = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setError('');
     if (query) {
       try {
         const response = await axios.get(`http://localhost:8080/posts-api/posts/search?query=${query}`);
         setPosts(response.data);
-        setLoading(false);
       } catch (error) {
-        console.error('Error searching posts:', error);
+        setError('Erro ao buscar os posts. Tente novamente mais tarde.');
+      } finally {
         setLoading(false);
       }
     }
@@ -47,20 +50,20 @@ const Home = () => {
           placeholder="Ou busque por tags..."
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          className={styles.search_input}
         />
-        <button className="btn btn-dark">Pesquisar</button>
+        <button className={styles.search_button}>Pesquisar</button>
       </form>
-      <div className="post-list">
-        {loading && <p>Carregando...</p>}
-        {posts && posts.length === 0 && (
-          <div className={styles.noposts}>
+      <div className={styles.post_list}>
+        {loading && <div className={styles.loading_spinner}></div>}
+        {error && <div className={styles.error_message}>{error}</div>}
+        {!loading && posts.length === 0 && (
+          <div className={styles.no_posts}>
             <p>Não foram encontrados posts</p>
-            <Link to="/posts/create" className="btn">
-              Criar post de informações e/ou promoções
-            </Link>
+            <Link to="/posts/create" className={styles.create_post_button}>Criar post de informações e/ou promoções</Link>
           </div>
         )}
-        {posts && posts.map((post) => <PostDetail key={post.id} post={post} />)}
+        {!loading && posts.map((post) => <PostDetail key={post.id} post={post} />)}
       </div>
     </div>
   );

@@ -1,12 +1,71 @@
 .create_post {
-    text-align: center;
-  }
-  
-  .create_post h2 {
-    font-size: 2.2em;
-  }
-  
-  .create_post p {
-    color: #aaa;
-    margin-bottom: 2em;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.create_post h2 {
+  font-size: 2.2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+.create_post p {
+  color: #555;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.create_post label {
+  display: block;
+  margin-bottom: 1em;
+}
+
+.create_post span {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.create_post input,
+.create_post textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.create_post textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.create_post .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 1em;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.create_post .btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.create_post .error {
+  margin-top: 1em;
+  color: #ff4d4f;
+  font-weight: bold;
+  text-align: center;
+}
