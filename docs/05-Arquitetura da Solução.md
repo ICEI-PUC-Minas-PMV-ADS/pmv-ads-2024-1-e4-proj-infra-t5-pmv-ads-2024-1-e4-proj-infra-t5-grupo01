@@ -4,7 +4,7 @@
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![arquiteturablucoffe](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/110863711/8f6520e9-c536-4a34-918c-930173c81e43)
+![arquitetura](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/110863711/64958d19-07ff-4388-8e34-db964743e0b9)
 
 
 
