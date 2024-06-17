@@ -4,6 +4,20 @@
 
 Layout padrão da aplicação que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
 
+**Aplicação WEB:**
+> - background-color padrão da aplicação: #f6fcff;
+> - font-family padrão da aplicação: "Montserrat", sans-serif;
+
+**Aplicação Mobile:**
+> - StatusBar backgroundColor="#36393F" barStyle="light-content";
+> - Container: background-color: #FFFFFF;
+> - Listas de postagens/promoções: background-color: #F1F1F1;
+> - Login:  background-color: #36393F; Text: #FFF;
+> - Button: background-color: #418cfd;
+> - ButtonText: #FFF;
+
+
+
 ![Template Padrão da Aplicação](img/cafeteria.png)
 ![Template Padrão da Aplicação](img/cafeteria2.png)
 
