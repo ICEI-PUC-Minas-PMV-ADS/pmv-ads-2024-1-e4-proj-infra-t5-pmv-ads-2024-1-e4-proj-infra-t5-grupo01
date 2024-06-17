@@ -67,6 +67,9 @@ Done: atividades concluídas e prontas para entrega.
 
 ![GitHub](img/gerenciamento.png)
 
+![GitHub](img/gerenciamentodeprojeto.png)
+
+
 Apresente a divisão de papéis entre os membros do grupo.
 
 Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe está organizada da seguinte maneira:
