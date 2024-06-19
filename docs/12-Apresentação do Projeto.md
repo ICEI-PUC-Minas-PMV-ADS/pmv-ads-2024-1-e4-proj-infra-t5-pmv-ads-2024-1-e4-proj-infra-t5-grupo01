@@ -1,15 +1,27 @@
 # Apresentação
 
-[Slide.pdf](https://github.com/user-attachments/files/15905452/Eixo.4.pdf)
+[Apresentação do Projeto.pdf](https://github.com/user-attachments/files/15905452/Eixo.4.pdf)
 
 
 ## Título do Projeto
 
-Nome e marca do projeto
+BluCoffe
 
 ## Identidade Visual (Marca, Design)
+**Marca:**
+> - BluCoffe
 
-O grupo deve ter o cuidado em utilizar figuras, imagens, e cores dentro do contexto da solução proposta, de forma a manter a temática do problema.
+**Aplicação WEB:**
+> - background-color padrão da aplicação: #f6fcff;
+> - font-family padrão da aplicação: "Montserrat", sans-serif;
+
+**Aplicação Mobile:**
+> - StatusBar backgroundColor="#36393F" barStyle="light-content";
+> - Container: background-color: #FFFFFF;
+> - Listas de postagens/promoções: background-color: #F1F1F1;
+> - Login:  background-color: #36393F; Text: #FFF;
+> - Button: background-color: #418cfd;
+> - ButtonText: #FFF;
 
 > **Links Úteis**:
 > - [10 dicas de design para slides](https://rockcontent.com/blog/design-para-slides/)
