@@ -1,8 +1,7 @@
 # Apresentação
 
-<span style="color:red">Pré-requisitos: Todos os demais artefatos</span>
+[Eixo 4.pdf](https://github.com/user-attachments/files/15905452/Eixo.4.pdf)
 
-Conjunto de slides em um arquivo PowerPoint ou PDF com a apresentação do projeto contemplando todos os itens trabalhados nos demais artefatos.
 
 ## Título do Projeto
 
