@@ -18,8 +18,9 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 
 
 
-![Template Padrão da Aplicação](img/cafeteria.png)
-![Template Padrão da Aplicação](img/cafeteria2.png)
+![Template Padrão da Aplicação web](img/cafeteria.png)
+![Template Padrão da Aplicação web](img/cafeteria2.png)<br><br>
+![Template Padrão do Aplicativo Mobile](img/appmobile.jpeg)
 
 > **Links Úteis**:
 >
