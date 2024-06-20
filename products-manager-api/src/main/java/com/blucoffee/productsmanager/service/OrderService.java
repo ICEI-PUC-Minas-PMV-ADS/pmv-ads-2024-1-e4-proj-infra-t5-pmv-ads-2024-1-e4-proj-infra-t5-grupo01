@@ -6,6 +6,7 @@ import com.google.firebase.cloud.FirestoreClient;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
 
@@ -17,25 +18,26 @@ public class OrderService {
     public void saveOrder(Order order){
 
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document().set(order);
+        order.setOrderDate(new Date());
+        ApiFuture<DocumentReference> future = dbFirestore.collection(COLLECTION_NAME).add(order);
+        try {
+            DocumentReference documentReference = future.get();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public Order getOrderDetails(String documentName) throws ExecutionException, InterruptedException {
-
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
         DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(documentName);
-
         ApiFuture<DocumentSnapshot> future = documentReference.get();
-
         DocumentSnapshot document = future.get();
-
         Order order = null;
-        if(document.exists()){
+        if (document.exists()) {
             order = document.toObject(Order.class);
-            return order;
-        } else return null;
+            order.setId(document.getId());
+        }
+        return order;
     }
 
     public List<Order> getAllOrders() throws ExecutionException, InterruptedException {
@@ -45,7 +47,9 @@ public class OrderService {
         QuerySnapshot querySnapshot = future.get();
         List<QueryDocumentSnapshot> documents = querySnapshot.getDocuments();
         for (QueryDocumentSnapshot document : documents) {
-            orderList.add(document.toObject(Order.class));
+            Order order = document.toObject(Order.class);
+            order.setId(document.getId());
+            orderList.add(order);
         }
         return orderList;
     }

@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity } from 'react-native';
 import { AuthContext } from '../../contexts/auth';
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native'; 
+import { getDate } from 'date-fns';
 
 const Order = ({ route }) => {
   const { user } = useContext(AuthContext);
@@ -22,29 +23,28 @@ const Order = ({ route }) => {
   };
 
   const handlePlaceOrder = async () => {
-    
-    if (user) {
-      const order = {
-        menuItem: menuItem,
-        quantity: quantity, 
-        total: menuItem.price * quantity, 
-        uid: user.uid, 
-        status: 'Pendente', 
-      };
+  if (user) {
+    const order = {
+      menuItem: menuItem,
+      quantity: quantity,
+      total: menuItem.price * quantity,
+      uid: user.uid,
+      status: 'Pendente',
+      orderDate: new Date().toISOString(), // Formata para ISO 8601
+    };
 
-      try {
-        await axios.post('http://10.0.2.2:8080/order-api/saveOrder', order);
-        
-        alert('Pedido criado com sucesso!');
-        navigation.navigate('Home');
-      } catch (error) {
-        console.error('Erro ao criar o pedido:', error);
-        alert('Erro ao criar o pedido. Por favor, tente novamente mais tarde.');
-      }
-    } else {
-      alert('Você precisa estar logado para fazer um pedido.');
-        navigation.navigate('Login');
+    try {
+      await axios.post('http://10.0.2.2:8080/order-api/saveOrder', order);
+      alert('Pedido criado com sucesso!');
+      navigation.navigate('Home');
+    } catch (error) {
+      console.error('Erro ao criar o pedido:', error);
+      alert('Erro ao criar o pedido. Por favor, tente novamente mais tarde.');
     }
+  } else {
+    alert('Você precisa estar logado para fazer um pedido.');
+    navigation.navigate('Login');
+  }
   };
 
   return (

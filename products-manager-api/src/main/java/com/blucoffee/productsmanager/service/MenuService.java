@@ -14,28 +14,20 @@ public class MenuService {
 
     private static final String COLLECTION_NAME = "menu";
 
-    public void saveMenu(Menu menu){
-
+    public String saveMenu(Menu menu) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document(menu.getTitle()).set(menu);
+        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document();
+        menu.setId(documentReference.getId());
+        documentReference.set(menu);
+        return documentReference.getId();
     }
 
-    public Menu getMenuDetails(String documentName) throws ExecutionException, InterruptedException {
-
+    public Menu getMenuDetails(String documentId) throws ExecutionException, InterruptedException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(documentName);
-
+        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(documentId);
         ApiFuture<DocumentSnapshot> future = documentReference.get();
-
         DocumentSnapshot document = future.get();
-
-        Menu menu = null;
-        if(document.exists()){
-            menu = document.toObject(Menu.class);
-            return menu;
-        } else return null;
+        return document.exists() ? document.toObject(Menu.class) : null;
     }
 
     public List<Menu> getAllMenu() throws ExecutionException, InterruptedException {
@@ -50,18 +42,13 @@ public class MenuService {
         return menuList;
     }
 
-    public void updateMenu(Menu menu){
-
+    public void updateMenu(Menu menu) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document(menu.getTitle()).set(menu);
+        dbFirestore.collection(COLLECTION_NAME).document(menu.getId()).set(menu);
     }
 
-    public void deleteMenu(String document){
-
+    public void deleteMenu(String documentId) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document(document).delete();
+        dbFirestore.collection(COLLECTION_NAME).document(documentId).delete();
     }
-
 }

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import styles from "./PostDetail.module.css";
 
 const PostDetail = ({ post }) => {

@@ -4,12 +4,21 @@ import java.util.List;
 
 public class Post {
 
+    public String id;
     public String body;
     public String createdBy;
     public String image;
     public String title;
     public String uid;
     public List<String> tags;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getBody() {
         return body;

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, FlatList, ActivityIndicator, Image, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, ActivityIndicator, Image, TouchableOpacity, RefreshControl } from 'react-native';
 import axios from 'axios';
 import Header from '../../components/Header'
 import { useNavigation } from '@react-navigation/native'; 
@@ -7,6 +7,7 @@ import { Container } from './styles';
 
 const Menu = () => {
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [menu, setMenu] = useState([]);
   const navigation = useNavigation(); 
 
@@ -19,14 +20,21 @@ const Menu = () => {
       const response = await axios.get('http://10.0.2.2:8080/menu-api/menu/getAll');
       setMenu(response.data);
       setLoading(false);
+      setRefreshing(false);
     } catch (error) {
       console.error('Error fetching menu:', error);
       setLoading(false);
+      setRefreshing(false);
     }
   };
 
   const handleOrderPress = (menuItem) => {
     navigation.navigate('Order', { menuItem });
+  };
+
+  const onRefresh = () => {
+    setRefreshing(true);
+    fetchMenu();
   };
 
   const renderMenuItem = ({ item }) => (
@@ -35,7 +43,7 @@ const Menu = () => {
         {item.title}
       </Text>
       <Image
-        style={{ width: 200, height: 200, }}
+        style={{ width: 200, height: 200 }}
         source={{ uri: item.image }}
       />
       <Text style={{ color:'#000000' }}>Descrição: {item.description}</Text>
@@ -68,6 +76,12 @@ const Menu = () => {
           data={menu}
           renderItem={renderMenuItem}
           keyExtractor={(item) => item.uid}
+          refreshControl={
+            <RefreshControl
+              refreshing={refreshing}
+              onRefresh={onRefresh}
+            />
+          }
         />
       </View>
     </Container>

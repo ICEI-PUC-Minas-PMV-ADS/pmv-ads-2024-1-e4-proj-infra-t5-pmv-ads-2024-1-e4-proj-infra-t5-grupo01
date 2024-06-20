@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { View, Text, FlatList, ActivityIndicator } from 'react-native';
+import { View, Text, FlatList, ActivityIndicator, RefreshControl } from 'react-native';
 import { AuthContext } from '../../contexts/auth';
 import axios from 'axios';
 
 const MyOrders = () => {
   const { user } = useContext(AuthContext);
   const [loading, setLoading] = useState(true);
+  const [refreshing, setRefreshing] = useState(false);
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
@@ -17,10 +18,17 @@ const MyOrders = () => {
       const response = await axios.get(`http://10.0.2.2:8080/order-api/order/getByUserUid/${user.uid}`);
       setOrders(response.data);
       setLoading(false);
+      setRefreshing(false);
     } catch (error) {
       console.error('Error fetching orders:', error);
       setLoading(false);
+      setRefreshing(false);
     }
+  };
+
+  const onRefresh = () => {
+    setRefreshing(true);
+    fetchOrders();
   };
 
   const renderOrderItem = ({ item }) => (
@@ -42,14 +50,20 @@ const MyOrders = () => {
 
   return (
     <View style={{ flex: 1 }}>
-      <Text style={{ color: '#000000',textAlign: 'center', fontSize: 35, fontWeight: 'bold', marginBottom: 10 }}>
+      <Text style={{ color: '#000000', textAlign: 'center', fontSize: 35, fontWeight: 'bold', marginBottom: 10 }}>
         Meus Pedidos
       </Text>
       <FlatList
         data={orders}
         renderItem={renderOrderItem}
-         keyExtractor={(item) => item.uid.toString()} // Usando a propriedade uid como chave única
-        />
+        keyExtractor={(item) => item.uid.toString()} 
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={onRefresh}
+          />
+        }
+      />
     </View>
   );
 };

@@ -2,17 +2,17 @@ package com.blucoffee.productsmanager.entity;
 
 public class Menu {
 
-    public int id;
+    public String id;
     public String title;
     public String description;
     public String image;
     public Double price;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

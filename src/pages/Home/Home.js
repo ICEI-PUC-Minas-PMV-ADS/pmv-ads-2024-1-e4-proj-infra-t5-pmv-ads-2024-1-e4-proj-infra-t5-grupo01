@@ -25,35 +25,10 @@ const Home = () => {
     fetchPosts();
   }, []);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setError('');
-    if (query) {
-      try {
-        const response = await axios.get(`http://localhost:8080/posts-api/posts/search?query=${query}`);
-        setPosts(response.data);
-      } catch (error) {
-        setError('Erro ao buscar os posts. Tente novamente mais tarde.');
-      } finally {
-        setLoading(false);
-      }
-    }
-  };
 
   return (
     <div className={styles.home}>
       <h1>Veja os nossos posts mais recentes sobre promoções</h1>
-      <form className={styles.search_form} onSubmit={handleSubmit}>
-        <input
-          type="text"
-          placeholder="Ou busque por tags..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className={styles.search_input}
-        />
-        <button className={styles.search_button}>Pesquisar</button>
-      </form>
       <div className={styles.post_list}>
         {loading && <div className={styles.loading_spinner}></div>}
         {error && <div className={styles.error_message}>{error}</div>}

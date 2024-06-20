@@ -1,13 +1,18 @@
-// CSS
 import styles from "./Post.module.css";
-
-// hooks
-import { useFetchDocument } from "../../hooks/useFetchDocument";
 import { useParams } from "react-router-dom";
+import { useFetchDocument } from "../../hooks/useFetchDocument";
 
 const Post = () => {
   const { id } = useParams();
-  const { document: post } = useFetchDocument("posts", id);
+  const { document: post, loading, error } = useFetchDocument("posts", id);
+
+  if (loading) {
+    return <div className={styles.loading_spinner}></div>;
+  }
+
+  if (error) {
+    return <div className={styles.error_message}>Erro ao carregar o post. Tente novamente mais tarde.</div>;
+  }
 
   return (
     <div className={styles.post_container}>

@@ -5,7 +5,6 @@ import Feather from'react-native-vector-icons/Feather';
 
 import Profile from '../pages/Profile';
 import PostsUser from '../pages/PostsUser';
-import MyMatchs from '../pages/MyMatchs';
 import Menu from '../pages/Menu';
 import HomeScreen from '../pages/Home';
 import Order from '../pages/Order'

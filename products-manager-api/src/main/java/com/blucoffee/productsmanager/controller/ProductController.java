@@ -17,13 +17,13 @@ public class ProductController {
     ProductService productService;
 
     @PostMapping("/save-products")
-    public void saveProduct(@RequestBody Product product){
-        productService.saveProduct(product);
+    public String saveProduct(@RequestBody Product product) {
+        return productService.saveProduct(product);
     }
 
-    @GetMapping("/products/{documentName}")
-    public Product getProduct(@PathVariable String documentName) throws ExecutionException, InterruptedException {
-        return productService.getProductDetails(documentName);
+    @GetMapping("/products/{documentId}")
+    public Product getProduct(@PathVariable String documentId) throws ExecutionException, InterruptedException {
+        return productService.getProductDetails(documentId);
     }
 
     @GetMapping("/products/getAll")
@@ -32,13 +32,12 @@ public class ProductController {
     }
 
     @PutMapping("/update-product")
-    public void updateProduct(@RequestBody Product product){
+    public void updateProduct(@RequestBody Product product) {
         productService.updateProduct(product);
     }
 
-    @DeleteMapping("/products/delete/{document}")
-    public void deleteProduct(@PathVariable String document) throws ExecutionException, InterruptedException {
-        productService.deleteProduct(document);
+    @DeleteMapping("/products/delete/{documentId}")
+    public void deleteProduct(@PathVariable String documentId) throws ExecutionException, InterruptedException {
+        productService.deleteProduct(documentId);
     }
-
 }

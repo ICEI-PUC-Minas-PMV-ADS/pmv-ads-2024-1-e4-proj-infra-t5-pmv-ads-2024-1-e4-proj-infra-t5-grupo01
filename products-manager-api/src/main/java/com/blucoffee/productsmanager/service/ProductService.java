@@ -15,28 +15,20 @@ public class ProductService {
 
     private static final String COLLECTION_NAME = "products";
 
-    public void saveProduct(Product product){
-
+    public String saveProduct(Product product) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document(product.getName()).set(product);
+        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document();
+        product.setId(documentReference.getId());
+        documentReference.set(product);
+        return documentReference.getId();
     }
 
-    public Product getProductDetails(String documentName) throws ExecutionException, InterruptedException {
-
+    public Product getProductDetails(String documentId) throws ExecutionException, InterruptedException {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(documentName);
-
+        DocumentReference documentReference = dbFirestore.collection(COLLECTION_NAME).document(documentId);
         ApiFuture<DocumentSnapshot> future = documentReference.get();
-
         DocumentSnapshot document = future.get();
-
-        Product product = null;
-        if(document.exists()){
-            product = document.toObject(Product.class);
-            return product;
-        } else return null;
+        return document.exists() ? document.toObject(Product.class) : null;
     }
 
     public List<Product> getAllProducts() throws ExecutionException, InterruptedException {
@@ -51,18 +43,13 @@ public class ProductService {
         return productList;
     }
 
-    public void updateProduct(Product product){
-
+    public void updateProduct(Product product) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document(product.getName()).set(product);
+        dbFirestore.collection(COLLECTION_NAME).document(product.getId()).set(product);
     }
 
-    public void deleteProduct(String document){
-
+    public void deleteProduct(String documentId) {
         Firestore dbFirestore = FirestoreClient.getFirestore();
-
-        dbFirestore.collection(COLLECTION_NAME).document(document).delete();
+        dbFirestore.collection(COLLECTION_NAME).document(documentId).delete();
     }
-
 }

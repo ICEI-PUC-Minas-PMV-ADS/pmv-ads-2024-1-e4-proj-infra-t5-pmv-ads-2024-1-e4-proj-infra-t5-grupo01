@@ -4,13 +4,21 @@ import java.util.Date;
 
 public class Order {
 
-    public Menu menuItem;
-    public int quantity;
-    public Double total;
-    public String uid;
-    public String status;
+    private String id;
+    private Menu menuItem;
+    private int quantity;
+    private Double total;
+    private String uid;
+    private String status;
+    private Date orderDate;
 
-    public Date date;
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public Menu getMenuItem() {
         return menuItem;
@@ -52,11 +60,11 @@ public class Order {
         this.status = status;
     }
 
-    public Date getDate() {
-        return date;
+    public Date getOrderDate() {
+        return orderDate;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
+    public void setOrderDate(Date orderDate) {
+        this.orderDate = orderDate;
     }
 }

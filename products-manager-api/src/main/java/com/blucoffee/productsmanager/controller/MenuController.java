@@ -17,13 +17,13 @@ public class MenuController {
     MenuService menuService;
 
     @PostMapping("/saveMenu")
-    public void saveMenu(@RequestBody Menu menu){
-        menuService.saveMenu(menu);
+    public String saveMenu(@RequestBody Menu menu) {
+        return menuService.saveMenu(menu);
     }
 
-    @GetMapping("/menu/{documentName}")
-    public Menu getMenu(@PathVariable String documentName) throws ExecutionException, InterruptedException {
-        return menuService.getMenuDetails(documentName);
+    @GetMapping("/menu/{documentId}")
+    public Menu getMenu(@PathVariable String documentId) throws ExecutionException, InterruptedException {
+        return menuService.getMenuDetails(documentId);
     }
 
     @GetMapping("/menu/getAll")
@@ -32,12 +32,12 @@ public class MenuController {
     }
 
     @PutMapping("/update-menu")
-    public void updateMenu(@RequestBody Menu menu){
+    public void updateMenu(@RequestBody Menu menu) {
         menuService.updateMenu(menu);
     }
 
-    @DeleteMapping("/menu/delete/{document}")
-    public void deletePost(@PathVariable String document) throws ExecutionException, InterruptedException {
-        menuService.deleteMenu(document);
+    @DeleteMapping("/menu/delete/{documentId}")
+    public void deleteMenu(@PathVariable String documentId) throws ExecutionException, InterruptedException {
+        menuService.deleteMenu(documentId);
     }
 }

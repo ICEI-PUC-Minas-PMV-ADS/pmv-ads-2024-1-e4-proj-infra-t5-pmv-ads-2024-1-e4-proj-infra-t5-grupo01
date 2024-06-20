@@ -25,9 +25,11 @@ import Register from "./pages/Register/Register";
 import EditPost from "./pages/EditPost/EditPost";
 import Menu from "./pages/Menu/Menu";
 import SalesReport from "./pages/SalesReport/SalesReport";
+import Orders from "./pages/Orders/Orders";
 
 // context
 import { AuthProvider } from "./contexts/AuthContext";
+
 
 
 function App() {
@@ -88,6 +90,10 @@ function App() {
               <Route
                 path="/sales-report"
                 element={user ? <SalesReport /> : <Navigate to="/login" />}
+              />
+              <Route
+                path="/orders"
+                element={user ? <Orders /> : <Navigate to="/login" />}
               />
             </Routes>
           </div>

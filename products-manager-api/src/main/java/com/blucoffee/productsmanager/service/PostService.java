@@ -45,7 +45,9 @@ public class PostService {
         QuerySnapshot querySnapshot = future.get();
         List<QueryDocumentSnapshot> documents = querySnapshot.getDocuments();
         for (QueryDocumentSnapshot document : documents) {
-            postList.add(document.toObject(Post.class));
+            Post post = document.toObject(Post.class);
+            post.setId(document.getId());
+            postList.add(post);
         }
         return postList;
     }
