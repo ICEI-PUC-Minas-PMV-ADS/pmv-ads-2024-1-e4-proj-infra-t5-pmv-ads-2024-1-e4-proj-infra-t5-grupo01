@@ -13,7 +13,7 @@ const Home = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/posts-api/posts/getAll');
+        const response = await axios.get('https://blucoffee.azurewebsites.net/posts-api/posts/getAll');
         setPosts(response.data);
       } catch (error) {
         setError('Erro ao carregar os posts. Tente novamente mais tarde.');

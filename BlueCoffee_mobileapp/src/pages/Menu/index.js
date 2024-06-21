@@ -17,7 +17,7 @@ const Menu = () => {
 
   const fetchMenu = async () => {
     try {
-      const response = await axios.get('http://10.0.2.2:8080/menu-api/menu/getAll');
+      const response = await axios.get('https://blucoffee.azurewebsites.net/menu-api/menu/getAll');
       setMenu(response.data);
       setLoading(false);
       setRefreshing(false);

@@ -24,7 +24,7 @@ const Stock = () => {
 
     const loadProducts = async () => {
         try {
-            const result = await axios.get("http://localhost:8080/api/products/getAll");
+            const result = await axios.get("https://blucoffee.azurewebsites.net/api/products/getAll");
             setProducts(result.data);
         } catch (error) {
             alert('Erro ao carregar produtos. Por favor, tente novamente mais tarde.');
@@ -33,7 +33,7 @@ const Stock = () => {
 
     const deleteProducts = async (id) => {
         try {
-            await axios.delete(`http://localhost:8080/api/products/delete/${id}`);
+            await axios.delete(`https://blucoffee.azurewebsites.net/api/products/delete/${id}`);
             loadProducts();
             alert('Produto excluído com sucesso.');
         } catch (error) {
@@ -43,7 +43,7 @@ const Stock = () => {
 
     const saveProduct = async () => {
         try {
-            await axios.post("http://localhost:8080/api/save-products", {
+            await axios.post("https://blucoffee.azurewebsites.net/api/save-products", {
                 name,
                 description,
                 quantity: parseInt(quantity)
@@ -60,7 +60,7 @@ const Stock = () => {
 
     const loadProduct = async (id) => {
         try {
-            const result = await axios.get(`http://localhost:8080/api/products/${id}`);
+            const result = await axios.get(`https://blucoffee.azurewebsites.net/api/products/${id}`);
             setProduct(result.data);
         } catch (error) {
             alert('Erro ao carregar detalhes do produto. Por favor, tente novamente mais tarde.');
@@ -69,7 +69,7 @@ const Stock = () => {
 
     const editProduct = async () => {
         try {
-            await axios.put("http://localhost:8080/api/update-product", {
+            await axios.put("https://blucoffee.azurewebsites.net/api/update-product", {
                 id: product.id,
                 name: product.name,
                 description: product.description,

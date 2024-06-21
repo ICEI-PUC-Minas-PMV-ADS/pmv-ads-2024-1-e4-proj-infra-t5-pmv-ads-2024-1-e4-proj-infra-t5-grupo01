@@ -15,7 +15,7 @@ const MyOrders = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await axios.get(`http://10.0.2.2:8080/order-api/order/getByUserUid/${user.uid}`);
+      const response = await axios.get(`https://blucoffee.azurewebsites.net/order-api/order/getByUserUid/${user.uid}`);
       setOrders(response.data);
       setLoading(false);
       setRefreshing(false);

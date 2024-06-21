@@ -10,7 +10,7 @@ const StockReport = () => {
 
     const loadProducts = async () => {
         try {
-            const result = await axios.get("http://localhost:8080/api/products/getAll");
+            const result = await axios.get("https://blucoffee.azurewebsites.net/api/products/getAll");
             setProducts(result.data);
         } catch (error) {
             alert('Erro ao carregar produtos. Por favor, tente novamente mais tarde.');

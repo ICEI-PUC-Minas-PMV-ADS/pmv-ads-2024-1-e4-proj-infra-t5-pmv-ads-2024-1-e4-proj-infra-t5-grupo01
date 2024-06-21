@@ -13,7 +13,7 @@ const SalesReport = () => {
     const loadOrders = async () => {
         setLoading(true);
         try {
-            const result = await axios.get("http://localhost:8080/order-api/order/getAll");
+            const result = await axios.get("https://blucoffee.azurewebsites.net/order-api/order/getAll");
             result.data.sort((a, b) => new Date(a.orderDate) - new Date(b.orderDate));
             setOrders(result.data);
         } catch (error) {

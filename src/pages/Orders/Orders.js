@@ -21,7 +21,7 @@ const Orders = () => {
 
     const loadOrders = async () => {
         try {
-            const result = await axios.get("http://localhost:8080/order-api/order/getAll");
+            const result = await axios.get("https://blucoffee.azurewebsites.net/order-api/order/getAll");
             setOrders(result.data);
         } catch (error) {
             alert('Erro ao carregar pedidos. Por favor, tente novamente mais tarde.');
@@ -30,7 +30,7 @@ const Orders = () => {
 
     const deleteOrder = async (document) => {
         try {
-            await axios.delete(`http://localhost:8080/order-api/order/delete/${document}`);
+            await axios.delete(`https://blucoffee.azurewebsites.net/order-api/order/delete/${document}`);
             loadOrders();
             alert('Pedido excluído com sucesso.');
         } catch (error) {
@@ -40,7 +40,7 @@ const Orders = () => {
 
     const loadOrder = async (document) => {
         try {
-            const result = await axios.get(`http://localhost:8080/order-api/order/${document}`);
+            const result = await axios.get(`https://blucoffee.azurewebsites.net/order-api/order/${document}`);
             setOrder(result.data);
         } catch (error) {
             alert('Erro ao carregar detalhes do pedido. Por favor, tente novamente mais tarde.');
@@ -49,7 +49,7 @@ const Orders = () => {
 
     const editOrder = async () => {
         try {
-            await axios.put(`http://localhost:8080/order-api/update-order/${order.id}`, {
+            await axios.put(`https://blucoffee.azurewebsites.net/order-api/update-order/${order.id}`, {
                 ...order,
                 quantity: parseInt(order.quantity),
             });

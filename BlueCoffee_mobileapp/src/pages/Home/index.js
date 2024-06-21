@@ -17,7 +17,7 @@ const HomeScreen = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get('http://10.0.2.2:8080/posts-api/posts/getAll');
+      const response = await axios.get('https://blucoffee.azurewebsites.net/posts-api/posts/getAll');
       setPosts(response.data);
       setLoading(false);
       setRefreshing(false);

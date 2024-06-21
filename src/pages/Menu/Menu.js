@@ -14,7 +14,7 @@ const Menu = () => {
 
   const loadMenu = async () => {
     try {
-      const result = await axios.get("http://localhost:8080/menu-api/menu/getAll");
+      const result = await axios.get("https://blucoffee.azurewebsites.net/menu-api/menu/getAll");
       setMenu(result.data);
     } catch (error) {
       alert('Erro ao carregar o Menu. Por favor, tente novamente mais tarde.');
@@ -23,7 +23,7 @@ const Menu = () => {
 
   const deleteMenuItem = async (id) => {
     try {
-      await axios.delete(`http://localhost:8080/menu-api/menu/delete/${id}`);
+      await axios.delete(`https://blucoffee.azurewebsites.net/menu-api/menu/delete/${id}`);
       loadMenu();
       alert('Produto excluído com sucesso.');
     } catch (error) {
@@ -33,7 +33,7 @@ const Menu = () => {
 
   const saveMenuItem = async () => {
     try {
-      await axios.post("http://localhost:8080/menu-api/saveMenu", menuItem);
+      await axios.post("https://blucoffee.azurewebsites.net/menu-api/saveMenu", menuItem);
       setMenuItem({});
       setShowAddItem(false);
       loadMenu();
@@ -45,7 +45,7 @@ const Menu = () => {
 
   const loadMenuItem = async (id) => {
     try {
-      const result = await axios.get(`http://localhost:8080/menu-api/menu/${id}`);
+      const result = await axios.get(`https://blucoffee.azurewebsites.net/menu-api/menu/${id}`);
       setMenuItem(result.data);
     } catch (error) {
       alert('Erro ao carregar detalhes do produto. Por favor, tente novamente mais tarde.');
@@ -54,7 +54,7 @@ const Menu = () => {
 
   const editMenuItem = async () => {
     try {
-      await axios.put("http://localhost:8080/menu-api/update-menu", menuItem);
+      await axios.put("https://blucoffee.azurewebsites.net/menu-api/update-menu", menuItem);
       setMenuItem({});
       setShow(false);
       loadMenu();

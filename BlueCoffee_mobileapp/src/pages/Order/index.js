@@ -34,7 +34,7 @@ const Order = ({ route }) => {
     };
 
     try {
-      await axios.post('http://10.0.2.2:8080/order-api/saveOrder', order);
+      await axios.post('https://blucoffee.azurewebsites.net/order-api/saveOrder', order);
       alert('Pedido criado com sucesso!');
       navigation.navigate('Home');
     } catch (error) {

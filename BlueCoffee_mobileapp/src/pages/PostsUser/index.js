@@ -17,7 +17,7 @@ const PostsUser = () => {
   const fetchPost = async () => {
     try {
       const document = route.params.document;
-      const response = await axios.get(`http://10.0.2.2:8080/posts-api/posts/${document}`);
+      const response = await axios.get(`https://blucoffee.azurewebsites.net/posts-api/posts/${document}`);
       setPost(response.data);
       setLoading(false);
     } catch (error) {
