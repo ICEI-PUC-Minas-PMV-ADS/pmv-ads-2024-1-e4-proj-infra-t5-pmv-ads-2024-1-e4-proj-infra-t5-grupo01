@@ -12,12 +12,12 @@ Os artefatos do projeto serão desenvolvidos a partir das plataformas listadas a
 |---------------------------    |----------  |------------------------------------------------------------------------------------------------------------------------|
 |Repositório de código-fonte    |GitHub      |[GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/tree/main)|
 |Documentos do projeto          |Google Docs|[Google Docs](https://docs.google.com/document/d/1KvXyCyd7VwPn308cMu5XoW9Syf9pnWuBRs-b3akDa5w/edit)                               | 
-|Gerenciamento do projeto       | GitHub    |[GitHub]()                               |
+|Gerenciamento do projeto       | GitHub    |[GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/projects?query=is%3Aopen)                               |
 |Gerenciamento de diagramas     | InvisionApp |[InvisionApp](https://leticiapauli6777.invisionapp.com/freehand/BluCoffe-jueylP5Vi)                                                  | 
 |Gerenciamento de wireframes    | InvisionApp |[InvisonApp](https://leticiapauli6777.invisionapp.com/freehand/BluCoffe-jueylP5Vi)                       | 
 |Gerenciamento do banco de dados|Firebase| [Firebase](https://console.firebase.google.com/project/blucoffee-ae7ef/overview)                                                                            |
 |Gerenciamento de código-fonte|GitHub|    [GitHub](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/tree/main)                                                                                                                |
-|Serviço de hospedagem da aplicação|Web - AZURE / Mobile - LocalHost|[XXXXXX](xxxxxx)           
+|Serviço de hospedagem da aplicação|Web - Netlifyy / Mobile - LocalHost|[BluCoffe - Cafeteria](https://blucoffee.netlify.app/)           
 
 
 ## Controle de Versão
@@ -76,7 +76,7 @@ Exemplificação: A equipe utiliza metodologias ágeis, tendo escolhido o Scrum 
 
 - Scrum Master: Leticia Pauli;
 - Product Owner: Douglas Zoccarato;
-- Equipe de Desenvolvimento: Gustavo Santos, Matheus Rios;
+- Equipe de Desenvolvimento: Gustavo Santos, Matheus Rios e Remilton Junior;
 - Equipe de Design: Leticia Pauli.
 
 
