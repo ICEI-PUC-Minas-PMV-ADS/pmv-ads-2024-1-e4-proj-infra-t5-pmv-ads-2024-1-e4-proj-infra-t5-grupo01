@@ -48,7 +48,7 @@ Front Web:
 - Intellij</br> 
 #### Banco NoSQL utilizado: </br> 
 - Google Firestore
-- MongoDB: Escolhemos este software devido ao fato de que cuida do armazenamento, atualização e recuperação de dados computacionais, permitindo toda esta administração de forma remota (através de rede / internet).</br>
+</br>
 #### Outras tecnologias utilizadas:</br>
 Lucidchart: Ferramenta utilizada para o design dos diagramas.</br>
 GitProjects: Ferramenta utilizada para realizar a gestão das tarefas do projeto.</br>
@@ -61,7 +61,7 @@ Apresente também uma figura explicando como as tecnologias estão relacionadas 
 
 ## Hospedagem
 
-A aplicação mobile será executada no AndroidStudio, em local host, e a aplicação Web será executada no Microsoft Azure.
+A aplicação mobile será executada no AndroidStudio, em local host, e a aplicação Web será executada no Netlify.
 
 ## Qualidade de Software
 
