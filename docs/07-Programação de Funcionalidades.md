@@ -71,7 +71,7 @@ A aplicação está disponível através do link:
 [BluCoffe](XXXXXXXXXX).
 <br><br>
 Para testes de usuário do tipo "cliente", o registro é livre.<br>
-Para testes de usuário do tipo "administrador", utilizar a credencial: usuário - XXXXXX / senha - XXXXXX
+Para testes de usuário do tipo "administrador", utilizar a credencial: usuário - funcionarioteste / senha - 123456
 
 
 
