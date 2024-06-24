@@ -113,6 +113,10 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ad
 
 
 
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2024-1-e4-proj-infra-t5-pmv-ads-2024-1-e4-proj-infra-t5-grupo01/assets/110863711/fcfe6ff5-d1ad-4642-a087-a79a95f6212b
+
+
+
 ## Avaliação
 
 CT-01 - Cadastrar usuário:
